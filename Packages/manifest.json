@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "com.meta.tutorial.framework": "https://github.com/meta-quest/Unity-UtilityPackages.git?path=com.meta.tutorial.framework",
+    "com.meta.utilities": "https://github.com/meta-quest/Unity-UtilityPackages.git?path=com.meta.utilities",
+    "com.meta.utilities.environment": "https://github.com/meta-quest/Unity-UtilityPackages.git?path=com.meta.utilities.environment",
+    "com.meta.utilities.narrative": "https://github.com/meta-quest/Unity-UtilityPackages.git?path=com.meta.utilities.narrative",
+    "com.meta.utilities.ropes": "https://github.com/meta-quest/Unity-UtilityPackages.git?path=com.meta.utilities.ropes",
+    "com.meta.utilities.viewport-renderer": "https://github.com/meta-quest/Unity-UtilityPackages.git?path=com.meta.utilities.viewport-renderer",
     "com.hecomi.ulipsync": "https://github.com/hecomi/uLipSync.git#upm",
     "com.meta.movement": "https://github.com/oculus-samples/Unity-Movement.git",
     "com.meta.xr.sdk.audio": "71.0.0",

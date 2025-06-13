@@ -32,51 +32,57 @@
       "hash": "950cfc3f6b2068b5ec4f886cfcae2595d070a5b5"
     },
     "com.meta.tutorial.framework": {
-      "version": "file:com.meta.tutorial.framework",
+      "version": "https://github.com/meta-quest/Unity-UtilityPackages.git?path=com.meta.tutorial.framework",
       "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
+      "source": "git",
+      "dependencies": {},
+      "hash": "8510f943f11e4a1d758be5d33df724ddf1430f2f"
     },
     "com.meta.utilities": {
-      "version": "file:com.meta.utilities",
+      "version": "https://github.com/meta-quest/Unity-UtilityPackages.git?path=com.meta.utilities",
       "depth": 0,
-      "source": "embedded",
+      "source": "git",
       "dependencies": {
-        "com.unity.collections": "2.4.2"
-      }
+        "com.unity.collections": "1.2.4"
+      },
+      "hash": "8510f943f11e4a1d758be5d33df724ddf1430f2f"
     },
     "com.meta.utilities.environment": {
-      "version": "file:com.meta.utilities.environment",
+      "version": "https://github.com/meta-quest/Unity-UtilityPackages.git?path=com.meta.utilities.environment",
       "depth": 0,
-      "source": "embedded",
+      "source": "git",
       "dependencies": {
         "com.meta.utilities": "1.1.1",
         "com.meta.xr.sdk.core": "66.0.0"
-      }
+      },
+      "hash": "8510f943f11e4a1d758be5d33df724ddf1430f2f"
     },
     "com.meta.utilities.narrative": {
-      "version": "file:com.meta.utilities.narrative",
+      "version": "https://github.com/meta-quest/Unity-UtilityPackages.git?path=com.meta.utilities.narrative",
       "depth": 0,
-      "source": "embedded",
+      "source": "git",
       "dependencies": {
         "com.meta.utilities": "1.1.1"
-      }
+      },
+      "hash": "8510f943f11e4a1d758be5d33df724ddf1430f2f"
     },
     "com.meta.utilities.ropes": {
-      "version": "file:com.meta.utilities.ropes",
+      "version": "https://github.com/meta-quest/Unity-UtilityPackages.git?path=com.meta.utilities.ropes",
       "depth": 0,
-      "source": "embedded",
+      "source": "git",
       "dependencies": {
         "com.meta.utilities": "1.1.1",
         "com.meta.xr.sdk.interaction": "66.0.0",
         "com.vvrvvd.spline-editor": "2.2.4"
-      }
+      },
+      "hash": "8510f943f11e4a1d758be5d33df724ddf1430f2f"
     },
     "com.meta.utilities.viewport-renderer": {
-      "version": "file:com.meta.utilities.viewport-renderer",
+      "version": "https://github.com/meta-quest/Unity-UtilityPackages.git?path=com.meta.utilities.viewport-renderer",
       "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
+      "source": "git",
+      "dependencies": {},
+      "hash": "8510f943f11e4a1d758be5d33df724ddf1430f2f"
     },
     "com.meta.xr.sdk.audio": {
       "version": "71.0.0",
@@ -169,20 +175,18 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.collections": {
-      "version": "2.4.2",
+      "version": "1.2.4",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.unity.burst": "1.8.13",
-        "com.unity.test-framework": "1.4.3",
-        "com.unity.nuget.mono-cecil": "1.11.4",
-        "com.unity.test-framework.performance": "3.0.3"
+        "com.unity.burst": "1.6.6",
+        "com.unity.test-framework": "1.1.31"
       },
       "url": "https://packages.unity.com"
     },
     "com.unity.ext.nunit": {
-      "version": "2.0.3",
-      "depth": 3,
+      "version": "1.0.6",
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -218,13 +222,6 @@
     "com.unity.mathematics": {
       "version": "1.2.6",
       "depth": 1,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.nuget.mono-cecil": {
-      "version": "1.11.4",
-      "depth": 2,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -306,22 +303,12 @@
       "hash": "6e8540a51318678dd50e1fc48613bdb330d8cf4c"
     },
     "com.unity.test-framework": {
-      "version": "1.4.3",
-      "depth": 2,
+      "version": "1.1.33",
+      "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.ext.nunit": "2.0.3",
+        "com.unity.ext.nunit": "1.0.6",
         "com.unity.modules.imgui": "1.0.0",
-        "com.unity.modules.jsonserialize": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.test-framework.performance": {
-      "version": "3.0.3",
-      "depth": 2,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.test-framework": "1.1.31",
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
