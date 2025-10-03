@@ -4,52 +4,47 @@
 
 *North Star* is a visual showcase that demonstrates the visual fidelity possible on Meta Quest devices. It has been built using [*Interaction SDK*](https://developer.oculus.com/documentation/unity/unity-isdk-interaction-sdk-overview/) for interactions, [*Movement SDK*](https://developers.meta.com/horizon/documentation/unity/move-overview) for full body tracking, and [*Audio SDK*](https://developers.meta.com/horizon/documentation/unity/meta-xr-audio-sdk-unity) for spatialized sounds. It is designed to be used primarily for the best intended hand-tracking experience but also provides full controller support.
 
-This showcase is also available to play for free on the [Horizon Store](https://www.meta.com/experiences/north-star/28679538058299918/).
+Inspired by the age of sail and exploration, you play as a new deckhand aboard the _Polaris_, a ship with a dedicated crew on a quest to find a mythical sunken treasure at Ocean Deep.
 
-## Licenses
-
-The majority of North Star is licensed under MIT LICENSE. However, files from [Text Mesh Pro](http://www.unity3d.com/legal/licenses/Unity_Companion_License), [DOTween](http://dotween.demigiant.com/license.php), [Unity URP](./Packages/com.unity.render-pipelines.universal/LICENSE.md), and any other third party files are licensed under their respective licensing terms.
-
-## Contributing
-
-See the [CONTRIBUTING](./CONTRIBUTING.md) file for how to help out.
+You can play this showcase for free on the [Horizon Store](https://www.meta.com/experiences/north-star/28679538058299918/).
 
 # Getting Started
 
-## Getting The Code
+## Getting the Code
 
-First, ensure you have Git LFS installed by running this command:
+First, ensure you have Git LFS installed by running:
 
 ```sh
 git lfs install
 ```
 
-Then, clone this repo using the "Code" button above, or this command:
+Then, clone this repository using the "Code" button above or this command:
 
 ```sh
 git clone https://github.com/oculus-samples/Unity-NorthStar.git
 ```
 
-## How to run the project in Unity
+## How to Run the Project in Unity
 
-1. Make sure you're using *Unity 2022.3.34f1* or newer.
-2. Load the [Assets/NorthStar/Scenes/#GameplayBeats/Launch](./Assets/NorthStar/Scenes/%23GameplayBeats/Launch.unity) scene.
-3. There are two ways of testing in the editor:
+1. Use Unity 2022.3.34f1 or newer.
+2. Load the [Assets/NorthStar/Scenes/#GameplayBeats/Launch.unity](./Assets/NorthStar/Scenes/%23GameplayBeats/Launch.unity) scene.
+3. To test in the Editor, use Quest Link or Meta XR Simulator:
     <details>
-    <summary><b>Quest Link</b></summary>
+      <summary><b>Quest Link</b></summary>
 
     - Enable Quest Link:
-        - Put on your headset and navigate to "Quick Settings"; select "Quest Link" (or "Quest Air Link" if using Air Link).
-        - Select your desktop from the list and then select, "Launch". This will launch the Quest Link app, allowing you to control your desktop from your headset.
-    - With the headset on, select "Desktop" from the control panel in front of you. You should be able to see your desktop in VR!
-    - Navigate to Unity and press "Play" - the application should launch on your headset automatically.
+        - Put on your headset, go to "Quick Settings", and select "Quest Link" (or "Quest Air Link" if using Air Link).
+        - Select your desktop from the list, then select "Launch". This opens the Quest Link app, allowing desktop control from your headset.
+    - With the headset on, select "Desktop" from the control panel in front of you. You should see your desktop in VR.
+    - Navigate to Unity and press "Play"; the application should launch on your headset automatically.
     </details>
-    <details>
-    <summary><b>Meta XR Simulator</b></summary>
 
-    - Select Meta -> Simulator -> Enable Simulator
-    - Press Play
-    - The simulator should open a new window ([Simulator Docs](https://developer.oculus.com/documentation/unity/xrsim-intro/))
+    <details>
+      <summary><b>Meta XR Simulator</b></summary>
+
+    - Select Meta -> Simulator -> Enable Simulator.
+    - Press Play.
+    - The simulator should open a new window ([Simulator Docs](https://developers.meta.com/horizon/documentation/unity/xrsim-intro/)).
     </details>
 
 # Showcase Features
@@ -62,15 +57,15 @@ Each of these features have been built to be accessible and scalable for other d
 
 ## Boat Movement
 
-With most of the game taking place on the vessel *Polaris* as it sails through a variety of ocean conditions, *North Star* achieves a variable motion on the boat to simulate the natural bobbing and swaying of sailing while paying special heed to the player’s comfort.
+Most of the game takes place *Polaris* as it sails through a variety of ocean conditions, *North Star* achieves a variable motion on the boat to simulate the natural bobbing and swaying of sailing while paying special heed to the player’s comfort.
 
 ## Comfort Settings
 
-Before starting the game, the player can set up their experience through the main menu. In addition to seated mode and height detection, the player can elect their sailing comfort level. There are 4 comfort levels to choose from (Calm, Choppy, Rough, Sailor), with the lowest dampening the natural movement of the boat to be negligible, and each following level intensifying the sailing experience further towards the highest and most realistic level.
+Before starting the game, players can set up their experience through the main menu. In addition to seated mode and height detection, they can elect their sailing comfort level. There are 4 comfort levels to choose from (Calm, Choppy, Rough, Sailor), with the lowest dampening the natural movement of the boat to be negligible, and each following level intensifying the sailing experience further toward the highest and most realistic level.
 
 ## Time of Day
 
-Included in the *North Star* project is a Time of Day system, where designers can define Environment Profiles to determine the sun/moon position, color of the sky, directional light and more. Designers can set up multiple Environment Profiles and either transition between them over a duration, or switch to new profiles immediately (ie: during a teleport or load screen).
+Included in the *North Star* project is a Time of Day system, where designers can define Environment Profiles to determine the sun/moon position, color of the sky, directional light, and more. Designers can set up multiple Environment Profiles and either transition between them over a duration, or switch to new profiles immediately (ie: during a teleport or load screen).
 
 ## Ropes
 
@@ -80,7 +75,7 @@ Included in the *North Star* project is a Time of Day system, where designers ca
 
 Utilizing Meta’s Interactions SDK and built specifically with hand tracking in mind, there are a variety of unique interactions available within the *North Star* experience:
 
-**Rope & sail manipulation:** Pull ropes to raise the mainsail and secure it off on a cleat, untie to furl the sails.
+**Rope & sail manipulation**: Pull ropes to raise the mainsail and secure it off on a cleat, untie to furl the sails.
 
 **Cranks**: Use a crank to re-angle the sails to line them up with windsocks and catch the breeze!
 
@@ -102,44 +97,65 @@ Jump into free sailing mode to put everything you’ve learned along your journe
 
 # Source Voiceovers
 
-To protect the voiceover talent employed for this project, the original source VO files that are utilized in the store release of North Star are not present in this public project repository. Instead all original source VO have been replaced with rudimentary placeholder generated VO.
+To protect the voiceover talent employed for this project, the original source VO files that are utilized in the store release of North Star are not present in this public project repository. Instead all original source VO files have been replaced with rudimentary placeholder generated VO.
 
 All original VO talent was sourced from the [Big Mouth Voices online agency](https://bigmouthvoices.com/).
 
+# Documentation
+
+More information is available in the [Documentation](./Documentation) section of this project.
+
+## Technical Systems:
+- [Ocean and Environment System](./Documentation/OceanSystemDesignAndImplementation.md).
+- [Time of Day System](./Documentation/TimeOfDay.md).
+- [Ocean Shader](./Documentation/OceanShader.md).
+- [Environment System Design](./Documentation/EnvironmentSystemDesign.md).
+- [Weather Effects](./Documentation/WeatherEffects.md).
+- [Shaders](./Documentation/Shaders.md).
+
+## Interaction and Movement:
+- [Boat Movement](./Documentation/BoatMovement.md).
+- [Full Body Tracking](./Documentation/FullBodyTracking.md).
+- [Rope System](./Documentation/RopeSystem.md).
+- [Spyglass](./Documentation/Spyglass.md).
+
+## Audio and Narrative:
+- [Narrative System](./Documentation/NarrativeSystem.md).
+- [Lip Sync](./Documentation/LipSync.md).
+
+## Rendering and Optimization:
+- [URP Modifications](./Documentation/URPModifications.md).
+- [Shadow Importance Volumes](./Documentation/ShadowImportanceVolumes.md).
+- [Visibility Set System](./Documentation/VisibilitySetSystem.md).
+- [Optimization](./Documentation/OptimisingFramerate.md).
+
+### Development:
+- [Meta SDK Use](./Documentation/MetaSdk.md).
+- [Build Instructions](./Documentation/BuildInstructions.md).
+
 # Dependencies
 
-This project makes use of the following plugins and software:
+This project uses the following plugins and software:
 
-- [Unity](https://unity.com/download) 2022.3.34f1 or newer
-- Meta [Core XR SDK](https://developer.oculus.com/downloads/package/unity-integration), [Movement SDK](https://github.com/oculus-samples/Unity-Movement), [Interaction SDK](https://developer.oculus.com/documentation/unity/unity-isdk-interaction-sdk-overview/), [Audio SDK](https://developers.meta.com/horizon/documentation/unity/meta-xr-audio-sdk-unity/), and [XR Simulator](https://developers.meta.com/horizon/documentation/unity/xrsim-intro/) (all released under the *[Oculus SDK License Agreement](https://developers.meta.com/horizon/licenses/)*).
-- [Unity Universal Render Pipeline (Meta ASW fork)](https://developer.oculus.com/documentation/unity/unity-asw/#how-to-enable-appsw-in-app)
-- [uLipSync](https://github.com/hecomi/uLipSync#upm)
-- [UnityJigglePhysics](https://github.com/naelstrof/UnityJigglePhysics#upm)
-- [Unity Spline Editor](https://github.com/vvrvvd/Unity-Spline-Editor#upm)
-- [CoACD](https://github.com/laurentopia/CoACD)
+- [Unity](https://unity.com/download) 2022.3.34f1 or newer.
+- [Meta Core XR SDK](https://developers.meta.com/horizon/downloads/package/unity-integration/).
+- [Meta Movement SDK](https://github.com/oculus-samples/Unity-Movement).
+- [Meta Interaction SDK](https://developers.meta.com/horizon/documentation/unity/unity-isdk-interaction-sdk-overview/).
+- [Meta Audio SDK](https://developers.meta.com/horizon/documentation/unity/meta-xr-audio-sdk-unity-intro).
+- [Meta XR Simulator](https://developers.meta.com/horizon/documentation/unity/xrsim-intro/).
+- [Unity Universal Render Pipeline (Meta ASW fork)](https://developers.meta.com/horizon/documentation/unity/unity-asw/#how-to-enable-appsw-in-app).
+- [uLipSync](https://github.com/hecomi/uLipSync#upm).
+- [UnityJigglePhysics](https://github.com/naelstrof/UnityJigglePhysics#upm).
+- [Unity Spline Editor](https://github.com/vvrvvd/Unity-Spline-Editor#upm).
 
-The following is required to test this project within Unity:
+To test this project within Unity, you need:
 
-- [Meta Quest Link](https://www.oculus.com/setup/)
+- [The Meta Quest App](https://www.meta.com/quest/setup/).
 
-## Project Documentation
+# License
 
-Documentation from the project team on the various systems and techniques of interest that were used in North Star:
-- [Ocean and Environment System](./Documentation/OceanSystemDesignAndImplementation.md)
-- [Time of Day System](./Documentation/TimeOfDay.md)
-- [Ocean Shader](./Documentation/OceanShader.md)
-- [Environment System Design](./Documentation/EnvironmentSystemDesign.md)
-- [Weather](./Documentation/WeatherEffects.md)
-- [Shaders](./Documentation/Shaders.md)
-- [Boat Movement](./Documentation/BoatMovement.md)
-- [Full Body Tracking](./Documentation/FullBodyTracking.md)
-- [Rope System](./Documentation/RopeSystem.md)
-- [Narrative System](./Documentation/NarrativeSystem.md)
-- [Lip Sync](./Documentation/LipSync.md)
-- [URP Modifications](./Documentation/URPModifications.md)
-- [Spyglass](./Documentation/Spyglass.md)
-- [Shadow Importance Volumes](./Documentation/ShadowImportanceVolumes.md)
-- [Visibility Set System](./Documentation/VisibilitySetSystem.md)
-- [Optimization](./Documentation/OptimisingFramerate.md)
-- [Meta SDK Use](./Documentation/MetaSdk.md)
-- [Build](./Documentation/BuildInstructions.md)
+The majority of North Star is licensed under the [MIT LICENSE](./LICENSE); however, files from [Text Mesh Pro](https://unity.com/legal/licenses/unity-companion-license), [DOTween](http://dotween.demigiant.com/license.php), [Unity URP](./Packages/com.unity.render-pipelines.universal/LICENSE.md), and any other third-party files are licensed under their respective licensing terms.
+
+# Contribution
+
+See the [CONTRIBUTING](./CONTRIBUTING.md) file for information on how to contribute.

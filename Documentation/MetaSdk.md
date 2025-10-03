@@ -1,5 +1,6 @@
-# Meta SDK use 
-The North Star visual showcase takes advantage of many Meta SDK's that are available for use:
+# Meta SDK Use
+
+The North Star visual showcase utilizes several Meta SDKs:
 
 - [Interaction](https://developers.meta.com/horizon/documentation/unity/unity-isdk-interaction-sdk-overview/)
 - [Camera Rig](https://developers.meta.com/horizon/documentation/unity/unity-ovrcamerarig/)
@@ -9,4 +10,4 @@ The North Star visual showcase takes advantage of many Meta SDK's that are avail
 - [Body Tracking](https://developers.meta.com/horizon/documentation/unity/move-body-tracking)
 - [Ray Interaction](https://developers.meta.com/horizon/documentation/unity/unity-isdk-ray-interaction/)
 - [Gestures](https://developers.meta.com/horizon/documentation/unity/unity-isdk-hand-pose-detection/)
-- [Meta Urp fork](https://github.com/Oculus-VR/Unity-Graphics/tree/2021.3/oculus-app-spacewarp/Packages)
+- [Meta URP Fork](https://github.com/Oculus-VR/Unity-Graphics/tree/2022.3/14.0.10-oculus-app-spacewarp/Packages)

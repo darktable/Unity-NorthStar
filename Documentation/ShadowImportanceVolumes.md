@@ -1,10 +1,10 @@
-## Shadow Importance Volumes 
+## Shadow Importance Volumes
 
-Unity will ensure the full viewport, up to the configured maximum shadow distance, has coverage in the shadowmap. For many games and on other platforms, this is sufficient to balance texel density with full scene coverage, however as this game takes place on the surface of a ship, and with the Meta Quests impressive FOV, it is wasteful to assign shadow coverage for areas of the viewport such as the sky and ocean. Shadow Importance Volumes address this by allowing a designer to specify which surfaces require shadowmap coverage, and allowing all other surfaces to lie outside of the shadow volume.
+Unity ensures the full viewport, up to the configured maximum shadow distance, is covered in the shadowmap. For many games and platforms, this balances texel density with full scene coverage. However, in this game, set on a ship's surface with the Meta Quest's impressive FOV, it's inefficient to assign shadow coverage to areas like the sky and ocean. Shadow Importance Volumes solve this by letting designers specify which surfaces need shadowmap coverage, allowing other surfaces to remain outside the shadow volume.
 
 ![](./Images/ShadowImportance/Fig1.png)
 
-ShadowImportanceVolumes require changes to URP in provide a mechanism to adjust the shadow projection matrix and shadow distance before shadow casting.
+ShadowImportanceVolumes require changes to URP to adjust the shadow projection matrix and shadow distance before shadow casting.
 
 ### Relevant Files
 - [ShadowImportanceVolume.cs](../Assets/NorthStar/Scripts/Utils/ShadowImportanceVolume.cs)
@@ -13,15 +13,15 @@ ShadowImportanceVolumes require changes to URP in provide a mechanism to adjust 
 
 ## Using Shadow Importance Volumes
 
-Shadow Importance Volumes will automatically be enabled when any enabled volume intersects the camera. To create a new volume, create an empty Game Object, and then select Add Component and choose ShadowImportanceVolume. You can then reposition and scale the volume into position. Any surface that can receive shadows should be inside a volume. The entire object/mesh is not required to be inside the volume, only the surface.
+Shadow Importance Volumes activate automatically when any enabled volume intersects the camera. To create a new volume, make an empty Game Object, select Add Component, and choose ShadowImportanceVolume. Reposition and scale the volume as needed. Only the surface that can receive shadows needs to be inside a volume, not the entire object or mesh.
 
 ![](./Images/ShadowImportance/Fig2.png)
 
-If all volumes are disabled or do not intersect the camera, shadows will revert to their default Unity implementation.
+If all volumes are disabled or don't intersect the camera, shadows revert to Unity's default implementation.
 
-## How they work
+## How They Work
 
-All volumes in the game world are first intersected with the active cameras frustum. Any volume or part of a volume that lies outside of the camera frustum is ignored. The intersection of the volumes and frustum is then used as a hull for shadowcasting - the hull is transformed into shadow space, and an adjustment matrix is generated to fit the shadowmap more tightly around the active areas.
+First, all volumes in the game world intersect with the active camera's frustum. Any volume or part outside the camera frustum is ignored. The intersection of volumes and frustum forms a hull for shadowcasting. This hull is transformed into shadow space, and an adjustment matrix is generated to fit the shadowmap more tightly around active areas.
 
 Unity camera frustum with a far distance of 20:
 

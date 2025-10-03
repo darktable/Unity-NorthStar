@@ -1,176 +1,128 @@
-# Weather Effects 
+# Weather Effects
 
-## Rain 
+## Rain
 
-#### Rain Ripples 
+### Rain Ripples
 
-As part of the rain system in NorthStar, rain ripples were added. The ripples are a procedural shader driven effect that is part of the NorthStarDefaultShader shader function. 
-
-To drive the rain ripples on compatible surfaces in the scene, use the Rain Data Scriptable object to configure the ripple settings and add the Rain Controller Component into the scene to enable/disable the rain ripples. 
+NorthStar's rain system includes rain ripples, a procedural shader-driven effect within the NorthStarDefaultShader function. To enable or disable rain ripples on compatible surfaces, configure the ripple settings using the Rain Data Scriptable object and add the Rain Controller Component to the scene.
 
 ![](./Images/WeatherEffects/Fig17.png)
 
+### Optimization
+
+A procedural function reduces texture samples, offering control and reusability advantages over a texture flipbook approach. Procedural ripples allow variable density and intensity, optimizing the effect by removing ripple layers. For Quest 2 builds, rain ripples are halved.
+
+### RainDrops
+
+Raindrops are a standalone Particle System, configured and placed as needed. Integration into the Rain Controller is ongoing.
+
+#### Optimization and Challenges
+
+In VR, clipping with the player camera is undesirable, especially with high-frequency effects like rain. NorthStar's challenge is the perception of small geometry at a distance, making raindrops hard to read and contributing to fragment overdraw. Instead of fading particles near the camera, we implemented a dynamic solution that scales particle size by distance. When particles reach size 0, they move behind the player, reducing fragment overdraw and improving performance and readability.
+
+### Wind
+
+NorthStar's foliage shaders include wind as a procedural feature. Wind functions only when a Wind controller component is present, and models have the correct vertex color setup.
+
 #### Optimization
 
-To reduce texture samples a procedural function was employed. The pros of using a procedural approach rather than a texture flipbook approach is the level of control and reusability. The procedural ripples can be setup to have a variable density and intensity that would be hard to achieve with a flip book. This also allows us to optimize the effect as much as we need to by removing ripple layers. For the Quest 2 builds the amount of rain ripples is halved. 
- 
-### RainDrops 
+The wind system uses multiple sine waves to simulate complex foliage movements.
 
-Raindrops are currently a standalone Particle System that's configured and placed as necessary. Implementation into the Rain Controller is a work in progress. 
+## Geometry Vertex Colors Setup
 
-#### Optimization and challenges
+Two types of foliage are supported:
 
-In VR clipping with the player camera generally doesn't look good, especially with high-frequency effects like rain. The difficulty with raindrops in NorthStar is the perception of small geometry in the distance making it hard to read the raindrops, particles become too small where they read as nothing or noise and contribute largely to fragment overdraw. 
+### Single Layer for Simple Foliage
 
-Instead of fading out the particles as they get near the player’s camera and dealing with clipping geometry, we implemented a dynamic solution that scales the particle size by the distance from the player and when the particles are at a size of 0 they get moved behind the player, reducing fragment overdraw, increasing performance and allowing better particle readability based on distance. 
+Single-layer foliage has a single motion channel, suitable for small clusters like grass or flowers.
 
-### Wind 
+**Vertex Color Setup:**
 
-Wind has been implemented as a procedural shader feature in the NorthStar’s foliage shaders. Wind will only work when a Wind controller component is present in the scene and models have the correct vertex color setup. 
+- R: Wind Influence (0-1).
+- G: None.
+- B: Random ID for leaf clusters.
+- A: None.
 
-#### Optimization 
-
-The wind system is a combination of multiple sine waves added together to simulate complex foliage movements. 
-
-## Geometry vertex colors setup: 
-
-There are two types of foliage supported: 
-
-### Single layer for simple foliage: 
-
-Single layer foliage is geometry that only has a single channel of motion to it. This is mostly reserved for small foliage clusters like grass, flowers or anything that doesn't need a trunk to it. 
-
-**Vertex Color setup:**
-
-R: Wind Influence. 0-1 How much the wind influences the vertices. 
-
-G: None 
-
-B: Random ID. Random offset. Can be used per leaf cluster 
-
-A: None 
-
-Example: 
+Example:
 
 ![](./Images/WeatherEffects/Fig5.png)
- 
 
-### Double Layer for more complex foliage: 
+### Double Layer for More Complex Foliage
 
-This setup is mostly used for foliage with a primary and secondary set of motion. For instance, in NorthStar the kelp in Beat 7 has a primary set of motion for the stem and then the leaves inherit the first set and add on the second set of motion to create a more fluid complex motion. 
+Used for foliage with primary and secondary motion sets, like NorthStar's kelp in Beat 7, where leaves inherit stem motion and add complexity.
 
-**Vertex Color Setup:** 
+**Vertex Color Setup:**
 
-R: Stem: Black 			Leaves: Wind Influence 
+- R: Stem: Black. Leaves: Wind Influence.
+- G: Stem: Wind Influence. Leaves: Stem Wind Influence.
+- B: Stem: None. Leaves: Random ID.
+- A: Stem: None. Leaves: None.
 
-G: Stem: Wind Influence		Leaves: Stem Wind Influence 
-
-B: Stem: None 			Leaves: Random ID 
-
-A: Stem: None 			Leave: None 
-
-Trunk: 
+Trunk:
 
 ![](./Images/WeatherEffects/Fig4.png)
 
-The parameters for the wind itself is stored in the Wind Data scriptable object which can be previewed in the Wind controller when the Wind Data field is populated. 
+Wind parameters are stored in the Wind Data scriptable object, viewable in the Wind controller when populated.
 
-![](./Images/WeatherEffects/Fig17.png) 
+![](./Images/WeatherEffects/Fig17.png)
 
-## Asset optimization 
+## Asset Optimization
 
-One of our most graphically intense scenes was the Docks scene in Beat2. This scene required the boat and a whole island to be in the same frame. With set dressing in the later stages of finalization, some light profiling revealed our vertex counts were fairly high. 
+The Docks scene in Beat 2, one of our most graphically intense scenes, required optimization due to high vertex counts. Techniques like LODs, imposters, and billboards were used, though not covered here as they are standard.
 
-![](./Images/WeatherEffects/Fig13.png) ![](./Images/WeatherEffects/Fig1.png)
-
- 
-
-A few techniques that were used to optimize geometry were approaches like LODs, imposters, and billboards, but these won’t be covered since they are standard approaches to optimization.  
-
-In NorthStar, where applicable, teleportation points were used to define a rough vertex density based on the distance from the teleportation point. Since NorthStar’s navigations are based on stationary points and not free movement we can be quite brutal in reducing geometry. 
-
-No real metric was followed for reductions as they were generally made until silhouettes started to show hard edges. 
-
- 
-
-Density decreases over distance. 
+In NorthStar, teleportation points define vertex density based on distance. With stationary navigation points, geometry reduction is aggressive until silhouettes show hard edges. Density decreases with distance.
 
 ![](./Images/WeatherEffects/Fig2.png)
 
-The red circles indicate places where the player stands. 
-
-To help reduce drawcalls and the scene vertex count the boat was also broken up into 4 parts based on where the player can navigate. 
+Red circles indicate player positions. To reduce draw calls and vertex count, the boat was divided into four parts based on player navigation.
 
 ![](./Images/WeatherEffects/Fig16.png)
 
-Each of these segments was baked down into a single mesh component with 2 materials. One material for the metal components and one material for the non-metal parts. With the LOD system extended to support manual LOD switching any part of the 4 deck parts could be switching to a cheaper version of the boat . 
+Each segment was baked into a single mesh with two materials: one for metal and one for non-metal parts. The LOD system supports manual switching to cheaper versions of the boat.
 
 ![](./Images/WeatherEffects/Fig8.png)
 
-Any geometry that didn’t need optimization was out of these custom LOD meshes. 
+Non-optimized geometry was excluded from custom LOD meshes.
 
-## Shader System 
+## Shader System
 
-The majority of NorthStar’s shaders were made with Shader Graph. These shaders were optimized for the Quest platform and below are the considerations that were made. 
+Most NorthStar shaders were created with Shader Graph, optimized for the Quest platform.
 
-### Texture Configuration 
+### Texture Configuration
 
-To reduce the number of texture samples used in NorthStar’s PBR shaders, a custom texture packing setup was used, this is how the channels are broken down: 
+A custom texture packing setup reduces texture samples in NorthStar's PBR shaders:
 
-BaseColor Texture: 
+- BaseColor Texture: RGB for Base Color, A for Opacity/Emissive.
+- Normal Texture: RG for Normal, G for Smoothness, B for Metallic/Ambient Occlusion/Height.
 
-RGB: 	Base Color 
+Channels are packed by usefulness, benefiting from ASTC's linear compression.
 
-A:	Opacity/Emissive. Emissive is multiplied with Base Color 
+### Shaders
 
-Normal Texture: 
-
-RG: 	Normal  
-
-G: 	Smoothness 
-
-B: 	Metallic/Ambient Occlusion/Height 
-
-The structure is to pack the most useful channels first and leave any channels that are conditional last. This works well with ASTC since compression is linear across all channels so we don’t suffer from leaving or using any extra texture channels. 
-
-### Shaders 
-
-Early on in development, an uber shader approach was used to reduce the amount of shaders required to maintain and allow materials to be easily setup, any feature can be enabled and disabled as needed. When a Parameter is connected to the node graph the shader compiler sees that as a dynamic “constant” forcing the shader to compute that  entire node chain, this prevents Unity’s shader compiler from collapsing shader instructions down reducing shader complexity. 
-
-A good example of this is between stock options for the PBR_N and PBR_NSM shaders. 
-
-![](./Images/WeatherEffects/Fig7.png)
-![](./Images/WeatherEffects/Fig0.png)
-![](./Images/WeatherEffects/Fig12.png) 
-
-(Left no parameters, right with parameters) 
-
-Just by disconnecting the SmoothnessValue and Metallicvalue parameters from the shader graph we get a 15%~ instruction count savings, not all instructions cost the same so it’s not a 1-1 performance increase, but every little bit helps. 
-
-Using this as our basis we created a collection of shaders covering all our common use cases. 
+An uber shader approach reduced shader maintenance and setup complexity. Disconnecting parameters like SmoothnessValue and MetallicValue from the shader graph saves 15% in instruction count, though not a direct performance increase. This basis led to a collection of shaders for common use cases.
 
 ![](./Images/WeatherEffects/Fig10.png)
 
-Shader functions were used extensively to maintain consistency between these shaders. One in particular was the Uber shader function that we’d manually enable and disable features with constants rather than parameters to take advantage of this optimization process. 
+Shader functions maintain consistency, with the Uber shader function enabling/disabling features with constants for optimization.
 
 ![](./Images/WeatherEffects/Fig11.png)
 
-### Material ShaderGUIs 
+### Material ShaderGUIs
 
-To help artists choose the right shaders a custom shader inspector was created. By assigning any of the NorthStar PBR shaders the material interface will use the custom inspector. 
+A custom shader inspector helps artists choose the right shaders. Assigning NorthStar PBR shaders uses this custom inspector.
 
 ![](./Images/WeatherEffects/Fig9.png)
 
-In the inspector, the Selected Shader dropdown gives the artist some informative choices while also limiting what information is displayed. By using this dropdown it gives a central location for all the shaders. 
+The Selected Shader dropdown provides informative choices and limits displayed information, centralizing shader options.
 
 ![](./Images/WeatherEffects/Fig14.png)
 
-By selecting a different shader in the above dropdown the inspector updates to display the relative options. 
+Selecting a different shader updates the inspector with relevant options.
 
-PBR with smoothness: 
+PBR with smoothness:
 
 ![](./Images/WeatherEffects/Fig15.png)
 
-PBR Foliage: 
+PBR Foliage:
 
 ![](./Images/WeatherEffects/Fig3.png)

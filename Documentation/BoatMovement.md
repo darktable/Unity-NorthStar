@@ -1,33 +1,33 @@
-# Boat Movement 
+# Boat Movement
 
 ## Overview
 
-The boat in North Star is a core element, requiring smooth movement, turning, and ocean interaction while allowing the player to move freely onboard. Several approaches were explored to achieve this. 
+In North Star, the boat is essential. It must move smoothly, turn, and interact with the ocean while allowing free player movement onboard. We explored several methods to achieve this.
 
 ## Movement Approaches
 
-### True Movement 
+### True Movement
 
-The boat was initially implemented as a kinematic rigid body moving via scripting, with all objects physically on top of it. However, this caused issues with hand tracking and physics constraints, leading us to abandon this approach. 
+Initially, the boat was a kinematic rigid body controlled by scripting, with objects physically on it. This caused hand tracking and physics issues, so we abandoned this method.
 
-### Move the World 
+### Move the World
 
-Another idea was to move the environment around the boat instead of the boat itself. However, this led to complications with persistent objects outside the boat, so it was not pursued. 
+We considered moving the environment around the boat instead of the boat itself. However, this complicated persistent objects outside the boat, so we did not pursue it.
 
 ### Fake Movement
 
-The final approach that we stuck with used a “fake movement” system, where the boat’s visual position is updated just before rendering and reset afterward. This prevents physics issues, avoids dragging objects along with the boat, and removes the need to move the world around the boat (ocean, islands, sky, reflections, etc.). Several helper functions were also developed for transforming between world space and “boat space.” 
+We adopted a "fake movement" system. The boat's visual position updates before rendering and resets afterward. This prevents physics issues, avoids dragging objects with the boat, and eliminates the need to move the world (ocean, islands, sky, reflections, etc.). We developed helper functions for transforming between world space and "boat space."
 
 #### Relevant File
 - [Fake Movement](../Assets/NorthStar/Scripts/Ship/FakeMovement.cs)
 
-## Rocking and Bobbing 
+## Rocking and Bobbing
 
-To simulate ocean movement, a procedural noise system was implemented to make the boat rock and bob. The effect scales with boat speed, which is influenced by wind direction and sail angle. A more physically realistic wave-height and momentum-based system was tested but was ultimately replaced for better player comfort and direct movement control. 
+To simulate ocean movement, we implemented a procedural noise system to make the boat rock and bob. The effect scales with boat speed, influenced by wind direction and sail angle. We tested a more realistic wave-height and momentum-based system but replaced it for better player comfort and direct control.
 
-## Reaction Movement 
+## Reaction Movement
 
-Specific scripted boat movements were implemented using the timeline for special events, such as waves hitting the boat or attacks from creatures like the Kraken. 
+We scripted specific boat movements for special events, like waves hitting the boat or creature attacks, using the timeline.
 
 ### Relevant Files
 - [BoatMovementAsset](../Assets/NorthStar/Scripts/Wave/BoatMovementAsset.cs)
@@ -38,12 +38,11 @@ Specific scripted boat movements were implemented using the timeline for special
 - [WaveControlBehaviour](../Assets/NorthStar/Scripts/Wave/WaveControlBehaviour.cs)
 - [WaveControlTrack](../Assets/NorthStar/Scripts/Wave/WaveControlTrack.cs)
 
-
 ![](./Images/BoatMovement/Fig0.png)
 
-## Comfort Settings 
+## Comfort Settings
 
-To ensure player comfort, procedural motion is controlled directly, allowing the magnitude to be adjusted. An additional comfort option locks the horizon angle in place, keeping the player upright as if they had perfect “sea legs.” This prevents motion sickness by stabilizing the horizon.
+To ensure player comfort, procedural motion is directly controlled, allowing magnitude adjustments. A comfort option locks the horizon angle, keeping the player upright as if they had perfect "sea legs." This stabilizes the horizon and prevents motion sickness.
 
 ```cs
 var boatRotation = BoatController.Instance.MovementSource.CurrentRotation;
