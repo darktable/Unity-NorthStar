@@ -17,16 +17,38 @@ MonoBehaviour:
   m_context: {fileID: 11400000, guid: 4ffcfe8f3e7e4214ca28ea7c194fc10b, type: 2}
   m_markdownFile: {fileID: 0}
   m_priority: 1019
-  m_overrideMarkdownText: "# Build instructions\n\n**Prerequisites:**\n\nTo build/install
-    the Unity project to your device, the device must first be set to [Developer
-    Mode](https://developers.meta.com/horizon/documentation/native/android/mobile-device-setup/#enable-developer-mode)
-    and optionally set up with [Meta Quest Developer Hub](https://developers.meta.com/horizon/documentation/unity/ts-odh/).\n\nTo
-    build NorthStar, the project must first be set to the Android platform in (file
-    -> build settings)\n\n![](./Images/Build/Fig0.png)\n\nAt this stage, you may
-    either plug in the device and build directly to it, or build an APK on your computer,
-    which can be installed on the device at a later time. This is done by pressing
-    either \u201CBuild and Run\u201D or \u201CBuild\u201D. No other steps in the
-    editor should be required for building.\n\n![](./Images/Build/Fig1.png)\n\nInstalling
-    the APK from your computer to the device can be done through either ADB or the
-    Meta Developer Hub, both of which require developer mode to be enabled.\n"
+  m_overrideMarkdownText: '# Build Instructions
+
+
+    **Prerequisites:**
+
+
+    Before
+    building or installing the Unity project on your device, ensure the device is
+    in [Developer Mode](https://developers.meta.com/horizon/documentation/native/android/mobile-device-setup/#enable-developer-mode).
+    Optionally, set it up with the [Meta Quest Developer Hub](https://developers.meta.com/horizon/documentation/unity/ts-odh/).
+
+
+    To
+    build NorthStar, set the project to the Android platform via (File -> Build Settings).
+
+
+    ![](./Images/Build/Fig0.png)
+
+
+    At
+    this point, you can either connect the device and build directly to it or create
+    an APK on your computer for later installation. Use "Build and Run" to build
+    directly or "Build" to create an APK. No additional steps in the editor are necessary
+    for building.
+
+
+    ![](./Images/Build/Fig1.png)
+
+
+    To install the APK from
+    your computer to the device, use either ADB or the Meta Developer Hub. Both methods
+    require developer mode to be enabled.
+
+'
   m_overrideMarkdownRoot: .\Documentation/

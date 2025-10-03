@@ -60,7 +60,7 @@ MonoBehaviour:
       m_classType: 
       m_scene: {fileID: 102900000, guid: 4253da1135ef5c94e829156efbf3bc49, type: 3}
       m_name: Beat 1
-      m_path: Packages\com.meta.utilities.environment\Runtime\Scripts\Environment\Environment.prefab
+      m_path: Packages/com.meta.utilities.environment/Runtime/Scripts/Environment/Environment.prefab
       m_guid: 
       m_instanceID: 0
   - Header: Player Prefab

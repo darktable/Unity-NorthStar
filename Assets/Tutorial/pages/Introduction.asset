@@ -17,162 +17,93 @@ MonoBehaviour:
   m_context: {fileID: 11400000, guid: 7df254ea3e7f1c04389ded60bacc434e, type: 2}
   m_markdownFile: {fileID: 0}
   m_priority: 1001
-  m_overrideMarkdownText: '
-
-
-    North Star is a groundbreaking visual showcase
-    for Meta Quest, pushing the limits of what''s possible on standalone VR. With
-    cutting-edge rendering techniques and dynamic visual systems, it demonstrates
-    the full potential of what Quest devices are capable of. This immersive experience
-    lets you explore a fantastical world inspired by the age of sail and exploration,
-    where you become the new deckhand aboard the _Polaris_, a vessel with a stalwart
-    crew on a daring quest to uncover a mythical and mysterious sunken treasure at
-    Ocean Deep.
-
-
-    Built to demonstrate the power of hand interactions, North
-    Star delivers seamless and intuitive experiences made possible by the latest
-    advancements in VR technology. With stunning visuals that elevate the Quest''s
-    graphical capabilities, this demo is a true showcase of how far the platform
-    can go in delivering an immersive, engaging experience.
-
-
-    All files default
-    to the <a href="./LICENSE">Oculus SDK License</a>, but everything under the <a
-    href="./Assets/NorthStar/">NorthStar</a> directory is under <a href="./Packages/com.meta.utilities/LICENSE">MIT
-    License</a>. Files from <a href="http://www.unity3d.com/legal/licenses/Unity_Companion_License">Text
-    Mesh Pro</a>, <a href="http://dotween.demigiant.com/license.php">DOTween</a>,
-    <a href="./Packages/com.unity.render-pipelines.universal/LICENSE.md">Unity URP</a>,
-    and any other third party files are licensed under their respective licensing
-    terms.
-
-
-    See the <a href="./CONTRIBUTING.md">CONTRIBUTING</a> file for how
-    to help out.
-
-
-    This showcase is also available to play for free on the <a
-    href="https://www.meta.com/experiences/north-star/28679538058299918/">Horizon
-    Store</a>.
-
-
-
-    ## Project Description
-
-
-    North Star is an application for
-    the Meta Quest devices that showcases dynamic hand gestures and full-body tracking
-    in a fantastical world. It demonstrates how to integrate intuitive hand interactions,
-    immersive environments, and engaging gameplay mechanics to create a truly unique
-    VR experience.
-
-
-    The project features:
-
-
-    - Dynamic hand gestures for
-    interacting with the environment
-
-    - Full-body tracking for immersive gameplay
-
-    -
-    Stunning visuals that push the boundaries of the Quest''s graphical capabilities
-
-
-
-    ##
-    Dependencies
-
-
-    This project makes use of the following plugins and software:
-
-
-    -
-    <a href="https://unity.com/download">Unity</a> 2022.3.34f1 or newer
-
-    - Meta
-    <a href="https://developer.oculus.com/downloads/package/unity-integration">Core
-    XR SDK</a>, <a href="https://github.com/oculus-samples/Unity-Movement">Movement
-    SDK</a>, <a href="https://developer.oculus.com/documentation/unity/unity-isdk-interaction-sdk-overview/">Interaction
-    SDK</a>, <a href="./">Audio SDK</a>, and <a href="https://developers.meta.com/horizon/documentation/unity/xrsim-intro/">XR
-    Simulator</a> (all released under the *<a href="https://developers.meta.com/horizon/licenses/oculussdk/">Oculus
-    SDK License Agreement</a>*).
-
-    - <a href="https://developer.oculus.com/documentation/unity/unity-asw/#how-to-enable-appsw-in-app">Unity
-    Universal Render Pipeline (Meta ASW fork)</a>
-
-    - <a href="https://github.com/hecomi/uLipSync#upm">uLipSync</a>
-
-    -
-    <a href="https://github.com/naelstrof/UnityJigglePhysics#upm">UnityJigglePhysics</a>
-
-    -
-    <a href="https://github.com/vvrvvd/Unity-Spline-Editor#upm">Unity Spline Editor</a>
-
-
-    The
-    following is required to test this project within Unity:
-
-
-    - <a href="https://www.oculus.com/setup/">Meta
-    Quest Link</a>
-
-
-
-    ## Project Documentation
-
-
-    Documentation from the project
-    team on the various systems and techniques of interest that were used in North
-    Star:
-
-    - <a href="./Documentation/OceanSystemDesignAndImplementation.md">Ocean
-    and Environment System</a>
-
-    - <a href="./Documentation/TimeOfDay.md">Time
-    of Day System</a>
-
-    - <a href="./Documentation/OceanShader.md">Ocean Shader</a>
-
-    -
-    <a href="./Documentation/EnvironmentSystemDesign.md">Environment System Design</a>
-
-    -
-    <a href="./Documentation/WeatherEffects.md">Weather</a>
-
-    - <a href="./Documentation/Shaders.md">Shaders</a>
-
-    -
-    <a href="./Documentation/BoatMovement.md">Boat Movement</a>
-
-    - <a href="./Documentation/FullBodyTracking.md">Full
-    Body Tracking</a>
-
-    - <a href="./Documentation/RopeSystem.md">Rope System</a>
-
-    -
-    <a href="./Documentation/NarrativeSystem.md">Narrative System</a>
-
-    - <a href="./Documentation/LipSync.md">Lip
-    Sync</a>
-
-    - <a href="./Documentation/URPModifications.md">URP Modifications</a>
-
-    -
-    <a href="./Documentation/Spyglass.md">Spyglass</a>
-
-    - <a href="./Documentation/ShadowImportanceVolumes.md">Shadow
-    Importance Volumes</a>
-
-    - <a href="./Documentation/VisibilitySetSystem.md">Visibility
-    Set System</a>
-
-    - <a href="./Documentation/OptimisingFramerate.md">Optimization</a>
-
-    -
-    <a href="./Documentation/MetaSdk.md">Meta SDK Use</a>
-
-    - <a href="./Documentation/BuildInstructions.md">Build</a>
-
-'
+  m_overrideMarkdownText: "\n\n*North Star* is a visual showcase that demonstrates
+    the visual fidelity possible on Meta Quest devices. It has been built using <a
+    href=\"https://developer.oculus.com/documentation/unity/unity-isdk-interaction-sdk-overview/\">*Interaction
+    SDK*</a>\_for interactions, <a href=\"https://developers.meta.com/horizon/documentation/unity/move-overview\">*Movement
+    SDK*</a> for full body tracking, and <a href=\"https://developers.meta.com/horizon/documentation/unity/meta-xr-audio-sdk-unity\">*Audio
+    SDK*</a> for spatialized sounds. It is designed to be used primarily for the
+    best intended hand-tracking experience but also provides full controller support.\n\nInspired
+    by the age of sail and exploration, you play as a new deckhand aboard the _Polaris_,
+    a ship with a dedicated crew on a quest to find a mythical sunken treasure at
+    Ocean Deep.\n\nYou can play this showcase for free on the <a href=\"https://www.meta.com/experiences/north-star/28679538058299918/\">Horizon
+    Store</a>.\n\n\n# Showcase Features\n\nEach of these features have been built
+    to be accessible and scalable for other developers to take and build upon in
+    their own projects.\n\n\n## Ocean\n\n*North Star* includes a highly customizable
+    ocean system that is optimized to be quite performant on device while achieving
+    a visually realistic ocean volume. Developers can control the hue, activity/choppiness
+    of the water, reflections, height and intensity of waves through the inspector,
+    and transition smoothly between profiles.\n\n\n## Boat Movement\n\nMost of the
+    game takes place *Polaris* as it sails through a variety of ocean conditions,
+    *North Star* achieves a variable motion on the boat to simulate the natural bobbing
+    and swaying of sailing while paying special heed to the player\u2019s comfort.\n\n\n##
+    Comfort Settings\n\nBefore starting the game, players can set up their experience
+    through the main menu. In addition to seated mode and height detection, they
+    can elect their sailing comfort level. There are 4 comfort levels to choose from
+    (Calm, Choppy, Rough, Sailor), with the lowest dampening the natural movement
+    of the boat to be negligible, and each following level intensifying the sailing
+    experience further toward the highest and most realistic level.\n\n\n## Time
+    of Day\n\nIncluded in the *North Star* project is a Time of Day system, where
+    designers can define Environment Profiles to determine the sun/moon position,
+    color of the sky, directional light, and more. Designers can set up multiple
+    Environment Profiles and either transition between them over a duration, or switch
+    to new profiles immediately (ie: during a teleport or load screen).\n\n\n## Ropes\n\n*North
+    Star* was built with the intention of providing the most realistic and tactile
+    rope interactions available in VR gaming. Ropes respond naturally when interacted
+    with, allowing players to wrap them around other objects (like securing the rope
+    from the mainsail to a cleat), swing and propel other objects (like a life buoy)
+    and generally behave realistically when thrown, pulled and jiggled.\n\n\n## Interactables\n\nUtilizing
+    Meta\u2019s Interactions SDK and built specifically with hand tracking in mind,
+    there are a variety of unique interactions available within the *North Star*
+    experience:\n\n**Rope & sail manipulation**: Pull ropes to raise the mainsail
+    and secure it off on a cleat, untie to furl the sails.\n\n**Cranks**: Use a crank
+    to re-angle the sails to line them up with windsocks and catch the breeze!\n\n**Levers**:
+    Pull the lever to begin the descent of the Diving Bell.\n\n**Harpoon Gun**: Load
+    bolts, pull back the tension, aim and hit the button to let loose a harpoon!
+    Wind the cranks to retrieve cargo salvaged from the ocean.\n\n**Spyglass**: Extend
+    the spyglass and hold it to an eye to magnify your view and look through fog.\n\n**Object
+    Manipulation**: Pick up and interact naturally with a number of objects found
+    aboard the *Polaris*, and take your turn navigating at the helm!\n\n\n## Narrative
+    & NPCs\n\nEngage in an exciting adventure inspired by the age of exploration!
+    Join the dynamic crew of the *Polaris* as it sets sail to find a mythical and
+    mysterious treasure in the depths of the ocean known as Ocean Deep. Fully animated
+    and voiced NPCs guide you through your adventure, utilizing lipsync technology
+    when addressing you, the new deckhand.\n\n\n## Free Sailing\n\nJump into free
+    sailing mode to put everything you\u2019ve learned along your journey to the
+    test! Freely manipulate the sails to catch the wind and feel the ocean rock you
+    under your feet.\n\n\n# Source Voiceovers\n\nTo protect the voiceover talent
+    employed for this project, the original source VO files that are utilized in
+    the store release of North Star are not present in this public project repository.
+    Instead all original source VO files have been replaced with rudimentary placeholder
+    generated VO.\n\nAll original VO talent was sourced from the <a href=\"https://bigmouthvoices.com/\">Big
+    Mouth Voices online agency</a>.\n\n\n# Documentation\n\nMore information is available
+    in the <a href=\"./Documentation\">Documentation</a> section of this project.\n\n\n##
+    Technical Systems:\n- <a href=\"./Documentation/OceanSystemDesignAndImplementation.md\">Ocean
+    and Environment System</a>.\n- <a href=\"./Documentation/TimeOfDay.md\">Time
+    of Day System</a>.\n- <a href=\"./Documentation/OceanShader.md\">Ocean Shader</a>.\n-
+    <a href=\"./Documentation/EnvironmentSystemDesign.md\">Environment System Design</a>.\n-
+    <a href=\"./Documentation/WeatherEffects.md\">Weather Effects</a>.\n- <a href=\"./Documentation/Shaders.md\">Shaders</a>.\n\n\n##
+    Interaction and Movement:\n- <a href=\"./Documentation/BoatMovement.md\">Boat
+    Movement</a>.\n- <a href=\"./Documentation/FullBodyTracking.md\">Full Body Tracking</a>.\n-
+    <a href=\"./Documentation/RopeSystem.md\">Rope System</a>.\n- <a href=\"./Documentation/Spyglass.md\">Spyglass</a>.\n\n\n##
+    Audio and Narrative:\n- <a href=\"./Documentation/NarrativeSystem.md\">Narrative
+    System</a>.\n- <a href=\"./Documentation/LipSync.md\">Lip Sync</a>.\n\n\n## Rendering
+    and Optimization:\n- <a href=\"./Documentation/URPModifications.md\">URP Modifications</a>.\n-
+    <a href=\"./Documentation/ShadowImportanceVolumes.md\">Shadow Importance Volumes</a>.\n-
+    <a href=\"./Documentation/VisibilitySetSystem.md\">Visibility Set System</a>.\n-
+    <a href=\"./Documentation/OptimisingFramerate.md\">Optimization</a>.\n\n\n###
+    Development:\n- <a href=\"./Documentation/MetaSdk.md\">Meta SDK Use</a>.\n- <a
+    href=\"./Documentation/BuildInstructions.md\">Build Instructions</a>.\n\n\n#
+    Dependencies\n\nThis project uses the following plugins and software:\n\n- <a
+    href=\"https://unity.com/download\">Unity</a> 2022.3.34f1 or newer.\n- <a href=\"https://developers.meta.com/horizon/downloads/package/unity-integration/\">Meta
+    Core XR SDK</a>.\n- <a href=\"https://github.com/oculus-samples/Unity-Movement\">Meta
+    Movement SDK</a>.\n- <a href=\"https://developers.meta.com/horizon/documentation/unity/unity-isdk-interaction-sdk-overview/\">Meta
+    Interaction SDK</a>.\n- <a href=\"https://developers.meta.com/horizon/documentation/unity/meta-xr-audio-sdk-unity-intro\">Meta
+    Audio SDK</a>.\n- <a href=\"https://developers.meta.com/horizon/documentation/unity/xrsim-intro/\">Meta
+    XR Simulator</a>.\n- <a href=\"https://developers.meta.com/horizon/documentation/unity/unity-asw/#how-to-enable-appsw-in-app\">Unity
+    Universal Render Pipeline (Meta ASW fork)</a>.\n- <a href=\"https://github.com/hecomi/uLipSync#upm\">uLipSync</a>.\n-
+    <a href=\"https://github.com/naelstrof/UnityJigglePhysics#upm\">UnityJigglePhysics</a>.\n-
+    <a href=\"https://github.com/vvrvvd/Unity-Spline-Editor#upm\">Unity Spline Editor</a>.\n\nTo
+    test this project within Unity, you need:\n\n- <a href=\"https://www.meta.com/quest/setup/\">The
+    Meta Quest App</a>.\n\n"
   m_overrideMarkdownRoot: ./

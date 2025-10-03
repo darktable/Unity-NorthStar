@@ -17,38 +17,34 @@ MonoBehaviour:
   m_context: {fileID: 11400000, guid: ccf5a8acd0168a6498a97e53cfd28d6a, type: 2}
   m_markdownFile: {fileID: 0}
   m_priority: 1012
-  m_overrideMarkdownText: "# North Star\u2019s implementation of ULipSync \n\nTo
-    support fully voiced NPC dialogue, NorthStar needed an efficient lip-syncing
-    solution without relying heavily on animators. [ULipSync](https://github.com/hecomi/uLipSync)
-    was chosen due to the team\u2019s familiarity with the plugin and its strong
-    support for narrative control, customization, and ease of use. \n\n ## ULipSync
-    Setup  \n\nULipSync offers three ways to process lip-sync data: \n\n1. Runtime
-    processing \u2013 Analyzes audio dynamically. \n\n2. Baking into scriptable objects
-    \u2013 Stores data for reuse. \n\n3. Baking into animation clips \u2013 Prepares
-    animations for timeline use. \n\nGiven the project\u2019s CPU constraints and
-    use of narrative timelines, baking the data into animation clips was the most
-    suitable approach. \n\n![](./Images/LipSync/Fig2.png)\n\n## Phoneme Sampling
-    & Viseme Groups \nULipSync maps phonemes (smallest speech components) to viseme
-    groups (blend shape controls for facial animation). \n\n - English has **44 phonemes**,
-    but not all are necessary for lip-syncing. \n\n - **Plosive sounds** (e.g., \"P\"
-    or \"K\") are difficult to calibrate and may not significantly impact the final
-    animation. \n\n - Stylized models require fewer viseme groups than realistic
-    ones, sometimes only needing vowels. \n\nSince we couldn\u2019t determine upfront
-    which phonemes were essential, we recorded all 44 phonemes for each voice actor.
-    This ensured flexibility in refining the system later. \n\n![](./Images/LipSync/Fig0.png)\n\n\n##
-    Challenges in Phoneme Sampling \n\nNot all phonemes were sampled perfectly. Issues
-    included: \n\n - Regression effects, where certain phonemes worsened results.
-    \n\n - Lack of matching viseme groups, making some phonemes irrelevant. \n\n
-    - Volume inconsistencies, causing some sounds to be too quiet for accurate sampling.
-    \n\nTo refine accuracy, we documented problematic phonemes for future improvements
-    and considered additional recordings where necessary.\n\n## Ensuring Realistic
-    Lip-Sync \n\nA common issue in automated lip-syncing is excessive mouth openness.
-    Realistic speech involves frequent mouth closures for certain sounds. To address
-    this: \n\n - We referenced real-life speech patterns. \n\n - Animators provided
-    feedback to refine mouth movement accuracy. \n\n## Final Implementation \n\nEach
+  m_overrideMarkdownText: "# North Star\u2019s Implementation of ULipSync\n\nTo support
+    fully voiced NPC dialogue, NorthStar needed an efficient lip-syncing solution
+    that minimized reliance on animators. The team chose [ULipSync](https://github.com/hecomi/uLipSync)
+    for its familiarity, strong narrative control, customization, and ease of use.\n\n##
+    ULipSync Setup\n\nULipSync processes lip-sync data in three ways:\n\n1. **Runtime
+    processing** \u2013 Analyzes audio dynamically.\n2. **Baking into scriptable
+    objects** \u2013 Stores data for reuse.\n3. **Baking into animation clips** \u2013
+    Prepares animations for timeline use.\n\nDue to CPU constraints and narrative
+    timelines, baking data into animation clips was the best approach.\n\n![](./Images/LipSync/Fig2.png)\n\n##
+    Phoneme Sampling & Viseme Groups\n\nULipSync maps phonemes (smallest speech components)
+    to viseme groups (facial animation controls).\n\n- English has **44 phonemes**,
+    but not all are needed for lip-syncing.\n- **Plosive sounds** (e.g., \"P\" or
+    \"K\") are hard to calibrate and may not impact the final animation significantly.\n-
+    Stylized models need fewer viseme groups than realistic ones, sometimes only
+    vowels.\n\nTo ensure flexibility, we recorded all 44 phonemes for each voice
+    actor, allowing system refinement later.\n\n![](./Images/LipSync/Fig0.png)\n\n##
+    Challenges in Phoneme Sampling\n\nNot all phonemes were sampled perfectly. Issues
+    included:\n\n- Regression effects, where certain phonemes worsened results.\n-
+    Lack of matching viseme groups, making some phonemes irrelevant.\n- Volume inconsistencies,
+    causing some sounds to be too quiet for accurate sampling.\n\nTo improve accuracy,
+    we documented problematic phonemes for future improvements and considered additional
+    recordings.\n\n## Ensuring Realistic Lip-Sync\n\nAutomated lip-syncing often
+    results in excessive mouth openness. Realistic speech involves frequent mouth
+    closures. To address this:\n\n- We referenced real-life speech patterns.\n- Animators
+    provided feedback to refine mouth movement accuracy.\n\n## Final Implementation\n\nEach
     voice line was baked with a pre-calibrated sample array, storing blend shape
     weights per NPC. This per-character approach worked due to a limited NPC count,
-    but a more generalized system would be required for larger-scale projects. \n\n![](./Images/LipSync/Fig1.png)\n\n###
-    Relevant Files\n- [NpcController.cs](../Assets/NorthStar/Scripts/NPC/NpcController.cs)\n-
+    but a more generalized system is needed for larger projects.\n\n![](./Images/LipSync/Fig1.png)\n\n###
+    Relevant Files\n\n- [NpcController.cs](../Assets/NorthStar/Scripts/NPC/NpcController.cs)\n-
     [NpcRigController.cs](../Assets/NorthStar/Scripts/NPC/NpcRigController.cs)\n"
   m_overrideMarkdownRoot: .\Documentation/

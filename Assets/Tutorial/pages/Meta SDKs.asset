@@ -17,14 +17,38 @@ MonoBehaviour:
   m_context: {fileID: 11400000, guid: 9002a5bb8dd47b040986514a6a2c9d40, type: 2}
   m_markdownFile: {fileID: 0}
   m_priority: 1018
-  m_overrideMarkdownText: "# Meta SDK use \nThe North Star visual showcase takes
-    advantage of many Meta SDK's that are available for use:\n\n- [Interaction](https://developers.meta.com/horizon/documentation/unity/unity-isdk-interaction-sdk-overview/)\n-
-    [Camera Rig](https://developers.meta.com/horizon/documentation/unity/unity-ovrcamerarig/)\n-
-    [Audio](https://developers.meta.com/horizon/documentation/unity/meta-xr-audio-sdk-unity/)\n-
-    [ASW](https://developers.meta.com/horizon/documentation/native/pc/asynchronous-spacewarp/)\n-
-    [Hand Tracking](https://developers.meta.com/horizon/documentation/unity/unity-handtracking-overview/)\n-
-    [Body Tracking](https://developers.meta.com/horizon/documentation/unity/move-body-tracking)\n-
-    [Ray Interaction](https://developers.meta.com/horizon/documentation/unity/unity-isdk-ray-interaction/)\n-
-    [Gestures](https://developers.meta.com/horizon/documentation/unity/unity-isdk-hand-pose-detection/)\n-
-    [Meta Urp fork](https://github.com/Oculus-VR/Unity-Graphics/tree/2021.3/oculus-app-spacewarp/Packages)\n"
+  m_overrideMarkdownText: '# Meta SDK Use
+
+
+    The North Star visual showcase utilizes
+    several Meta SDKs:
+
+
+    - [Interaction](https://developers.meta.com/horizon/documentation/unity/unity-isdk-interaction-sdk-overview/)
+
+    -
+    [Camera Rig](https://developers.meta.com/horizon/documentation/unity/unity-ovrcamerarig/)
+
+    -
+    [Audio](https://developers.meta.com/horizon/documentation/unity/meta-xr-audio-sdk-unity/)
+
+    -
+    [ASW](https://developers.meta.com/horizon/documentation/native/pc/asynchronous-spacewarp/)
+
+    -
+    [Hand Tracking](https://developers.meta.com/horizon/documentation/unity/unity-handtracking-overview/)
+
+    -
+    [Body Tracking](https://developers.meta.com/horizon/documentation/unity/move-body-tracking)
+
+    -
+    [Ray Interaction](https://developers.meta.com/horizon/documentation/unity/unity-isdk-ray-interaction/)
+
+    -
+    [Gestures](https://developers.meta.com/horizon/documentation/unity/unity-isdk-hand-pose-detection/)
+
+    -
+    [Meta URP Fork](https://github.com/Oculus-VR/Unity-Graphics/tree/2022.3/14.0.10-oculus-app-spacewarp/Packages)
+
+'
   m_overrideMarkdownRoot: .\Documentation/

@@ -17,5 +17,17 @@ MonoBehaviour:
   m_tutorialConfig: {fileID: 11400000, guid: b356a0b1f496b4b4eb15067276f6d495, type: 2}
   m_showBanner: 0
   m_markdownPath: ./Documentation/ShadowImportanceVolumes.md
-  m_reduceTitleLevelBy1: 0
-  m_pageConfigs: []
+  m_reduceTitleLevelBy1: 1
+  m_pageConfigs:
+  - SectionTitle: Shadow Importance Volumes
+    ShowSectionInContext: 1
+    ShowSectionAsChild: 0
+    HideTitle: 0
+  - SectionTitle: Using Shadow Importance Volumes
+    ShowSectionInContext: 1
+    ShowSectionAsChild: 0
+    HideTitle: 0
+  - SectionTitle: How They Work
+    ShowSectionInContext: 1
+    ShowSectionAsChild: 0
+    HideTitle: 0

@@ -32,11 +32,11 @@
       "hash": "950cfc3f6b2068b5ec4f886cfcae2595d070a5b5"
     },
     "com.meta.tutorial.framework": {
-      "version": "https://github.com/meta-quest/Unity-UtilityPackages.git?path=com.meta.tutorial.framework",
+      "version": "https://github.com/meta-quest/Unity-UtilityPackages.git?path=com.meta.tutorial.framework#com.meta.tutorial.framework-1.0.2",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "8510f943f11e4a1d758be5d33df724ddf1430f2f"
+      "hash": "3dd9868902b0da1cd7700c9da725aa9fb1ea5da5"
     },
     "com.meta.utilities": {
       "version": "https://github.com/meta-quest/Unity-UtilityPackages.git?path=com.meta.utilities",

@@ -17,5 +17,9 @@ MonoBehaviour:
   m_tutorialConfig: {fileID: 11400000, guid: b356a0b1f496b4b4eb15067276f6d495, type: 2}
   m_showBanner: 0
   m_markdownPath: ./Documentation/URPModifications.md
-  m_reduceTitleLevelBy1: 0
-  m_pageConfigs: []
+  m_reduceTitleLevelBy1: 1
+  m_pageConfigs:
+  - SectionTitle: URP Modifications
+    ShowSectionInContext: 1
+    ShowSectionAsChild: 0
+    HideTitle: 0
