@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System;
 using Meta.Utilities;
+using Meta.XR.Samples;
 using Oculus.Interaction.GrabAPI;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -10,6 +11,7 @@ namespace NorthStar
     /// <summary>
     /// Scriptable object for handling setting variables from a consistent source
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [CreateAssetMenu(menuName = "Data/Global Settings")]
     public class GlobalSettings : ScriptableObject
     {

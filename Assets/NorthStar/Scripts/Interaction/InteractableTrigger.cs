@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Triggers a unity event when an interaction reaches a defined range
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class InteractableTrigger : MonoBehaviour
     {
         [SerializeField, Range(0, 1)] private float m_triggerThreshold = 1, m_releaseThreshold = 0;

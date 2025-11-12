@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -7,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Plays effects based on collision events. Collision types are mapped based on pairs of physics materials to keep things simple
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class CollisionSound : MonoBehaviour
     {
         public UnityEvent OnPlaySound;

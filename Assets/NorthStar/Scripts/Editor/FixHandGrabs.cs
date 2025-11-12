@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using Oculus.Interaction.HandGrab;
 using UnityEditor;
 using UnityEngine;
@@ -8,6 +10,7 @@ namespace NorthStar
     /// <summary>
     /// Editor tool for mass fixing hand grab settings
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class FixHandGrabs
     {
         [MenuItem("Tools/NorthStar/Fix Hand grabs")]

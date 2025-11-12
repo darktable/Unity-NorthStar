@@ -1,10 +1,13 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
 
 namespace NorthStar
 {
+    [MetaCodeSample("NorthStar")]
     [TrackClipType(typeof(LookAtAsset))]
     [TrackBindingType(typeof(NpcRigController))]
     public class LookAtTrack : TrackAsset

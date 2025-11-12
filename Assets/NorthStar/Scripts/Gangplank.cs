@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -7,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Tries to keep one point attached to the boat and one to the world
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class Gangplank : MonoBehaviour
     {
         [SerializeField] private Transform m_otherEndPoint;

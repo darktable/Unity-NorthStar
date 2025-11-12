@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System;
 using Meta.Utilities;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -9,6 +10,7 @@ namespace NorthStar
     /// <summary>
     /// An interactable in the form of rotating handle where the user is able to rotate the input on one fixed axis which will output the (?)
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class CrankInteractable : BaseJointInteractable<float>
     {
         [SerializeField]

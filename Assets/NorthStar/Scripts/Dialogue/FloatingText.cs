@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -7,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Keeps the subtitles on screen
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class FloatingText : MonoBehaviour
     {
         [SerializeField] private Transform m_targetPosition;

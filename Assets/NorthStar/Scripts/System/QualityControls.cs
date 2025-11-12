@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System;
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
@@ -12,6 +13,7 @@ namespace NorthStar
     /// 
     /// These settings are configurable and include things like target framerate, ASW and quality preset
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class QualityControls : MonoBehaviour
     {
         public enum TargetFramerate
@@ -21,6 +23,7 @@ namespace NorthStar
             FPS120 = 120
         }
 
+        [MetaCodeSample("NorthStar")]
         [Serializable]
         public class QualityPreset
         {

@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections;
 using Meta.Utilities.Narrative;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,6 +10,7 @@ namespace NorthStar
     /// <summary>
     /// Manages the loading screen logic and visuals
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class LoadScreen : MonoBehaviour
     {
         private static LoadScreen s_instance;

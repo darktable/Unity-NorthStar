@@ -3,6 +3,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Meta.Utilities;
+using Meta.XR.Samples;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -13,6 +14,7 @@ namespace NorthStar
     /// <summary>
     /// Prewarm's the game by loading any required shader variants and caching all relevant PSO's to prevent hitching during gameplay
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class PrewarmGame : MonoBehaviour
     {
         [SerializeField] private QualityData m_qualityData;

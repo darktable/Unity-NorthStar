@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections;
 using Meta.Utilities.Narrative;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,7 @@ namespace NorthStar
     /// <summary>
     /// Handles loading back into the first scene after credits are complete
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class CreditsScene : MonoBehaviour
     {
         public TaskID FirstTask = TaskID.None;

@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -6,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Detects when the player is out of bounds to draw a special visual indicator to guide the player back
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class PlayerOutOfBounds : MonoBehaviour
     {
         [SerializeField] private float m_headCheckRadius;

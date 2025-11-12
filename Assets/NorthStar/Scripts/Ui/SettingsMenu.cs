@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using TMPro;
 using UnityEngine;
 
@@ -7,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Controller for the settings menu UI
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class SettingsMenu : UiMenu
     {
         [SerializeField] private ToggleButton m_seatedToggle;

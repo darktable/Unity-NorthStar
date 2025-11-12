@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Playables;
@@ -9,6 +10,7 @@ namespace NorthStar
     /// <summary>
     /// Handles playing subtitles and timelines through unity events
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class DialoguePlayer : MonoBehaviour
     {
         [SerializeField] private DialogueSection m_dialogueSection;

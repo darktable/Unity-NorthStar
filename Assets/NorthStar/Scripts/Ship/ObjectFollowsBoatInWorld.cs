@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -6,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Moves an object alongside the boat without it being a child
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class ObjectFollowsBoatInWorld : MonoBehaviour
     {
         private Vector3 m_position;

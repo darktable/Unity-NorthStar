@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities;
+using Meta.XR.Samples;
 using Oculus.Interaction.HandGrab;
 using UnityEngine;
 using UnityEngine.Events;
@@ -9,6 +10,7 @@ namespace NorthStar
     /// <summary>
     /// Exposes physics transformer callbacks as unity events
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class OnGrabEvents : MonoBehaviour
     {
         [SerializeField, AutoSet] private PhysicsTransformer m_physicsTransformer;

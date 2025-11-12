@@ -2,6 +2,7 @@
 using System;
 using DG.Tweening;
 using Meta.Utilities;
+using Meta.XR.Samples;
 using Oculus.Interaction;
 using UnityEngine;
 
@@ -10,6 +11,7 @@ namespace NorthStar
     /// <summary>
     /// Controller for boat logic and movement system
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class BoatController : Singleton<BoatController>
     {
         [SerializeField] private float m_maxSpeed = 1.0f;

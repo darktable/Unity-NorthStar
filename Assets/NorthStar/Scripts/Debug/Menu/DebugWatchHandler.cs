@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using TMPro;
 using UnityEngine;
 
@@ -7,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Handler for debug watches, simply evaluates the lambda as a string and displays the result via a text label in the UI
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class DebugWatchHandler : MonoBehaviour
     {
         public DebugSystem.DebugWatch ConnectedValue

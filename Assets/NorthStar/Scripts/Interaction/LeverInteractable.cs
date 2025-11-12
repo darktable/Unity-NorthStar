@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -7,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// An interactable in the form of lever where the user is able to manipulate a handle on a hinge which will output the angle value in a ratio from 0 to 1 (limits.min to limits.max)
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class LeverInteractable : BaseJointInteractable<float>
     {
         [Space(10), SerializeField]

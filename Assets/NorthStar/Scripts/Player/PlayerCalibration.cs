@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities;
+using Meta.XR.Samples;
 using Oculus.Movement.AnimationRigging;
 using Oculus.Movement.Utils;
 using UnityEngine;
@@ -9,6 +10,7 @@ namespace NorthStar
     /// <summary>
     /// Scales the player avatar model to match the player's height calibration
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class PlayerCalibration : MonoBehaviour
     {
         [SerializeField] private Animator m_animator;

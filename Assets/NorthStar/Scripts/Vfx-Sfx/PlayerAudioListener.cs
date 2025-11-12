@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -6,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Allows the audio listner to ignorre fake movement
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class PlayerAudioListener : MonoBehaviour
     {
         private void Start()

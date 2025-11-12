@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -7,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Calls a unity event when something enters its trigger
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class TriggerVolume : MonoBehaviour
     {
         public GameObject TriggeringObject;

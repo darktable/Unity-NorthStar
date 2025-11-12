@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Meta.Utilities;
 using Meta.Utilities.Environment;
+using Meta.XR.Samples;
 using Oculus.Interaction;
 using Oculus.Interaction.HandGrab;
 using UnityEngine;
@@ -13,6 +14,7 @@ namespace NorthStar
     /// <summary>
     /// Detects the 'grab' teleport gesture on each hand
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class GrabTeleport : MonoBehaviour
     {
         private static readonly int s_transition = Shader.PropertyToID("_Transition");

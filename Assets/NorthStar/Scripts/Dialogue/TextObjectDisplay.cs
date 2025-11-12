@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities;
+using Meta.XR.Samples;
 using TMPro;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Writes text to tmp objects from text assets
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class TextObjectDisplay : MonoBehaviour
     {
         [SerializeField, AutoSet] private TextMeshProUGUI m_text;

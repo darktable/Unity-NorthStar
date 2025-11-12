@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Meta.Utilities.Ropes;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -10,6 +11,7 @@ namespace NorthStar
     /// <summary>
     /// Measure the tightness of a rope :O
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class RopeTightnessMesurerer : MonoBehaviour
     {
         public float Value { get; private set; }

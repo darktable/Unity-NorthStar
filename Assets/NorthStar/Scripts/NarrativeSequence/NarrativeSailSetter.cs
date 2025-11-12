@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -6,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Sets the sail values from a unity event
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class NarrativeSailSetter : MonoBehaviour
     {
         [SerializeField] private float m_transitionTime;

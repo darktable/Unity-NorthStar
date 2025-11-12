@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Playables;
 
@@ -7,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// This playable behaviour mixes multiple boat reaction movements together on the timeline, allowing for complex movements to be created and edited via timelines
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class BoatMovementMixerBehaviour : PlayableBehaviour
     {
         public int Slot;

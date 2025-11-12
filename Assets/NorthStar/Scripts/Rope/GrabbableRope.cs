@@ -1,11 +1,13 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities;
 using Meta.Utilities.Ropes;
+using Meta.XR.Samples;
 using Oculus.Interaction.HandGrab;
 using UnityEngine;
 
 namespace NorthStar
 {
+    [MetaCodeSample("NorthStar")]
     public class GrabbableRope : MonoBehaviour
     {
         [SerializeField] private bool m_leftHand;

@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections.Generic;
 using Meta.Utilities;
+using Meta.XR.Samples;
 using Oculus.Interaction;
 using Oculus.Interaction.HandGrab;
 using UnityEngine;
@@ -10,6 +11,7 @@ namespace NorthStar
     /// <summary>
     /// Overrides the Itransformer to provide rigidboydy based interactions
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class PhysicsTransformer : MonoBehaviour, ITransformer
     {
         private HandGrabInteractable[] m_interactables;

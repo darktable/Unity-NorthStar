@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities;
+using Meta.XR.Samples;
 using Oculus.Interaction;
 using Oculus.Movement.AnimationRigging;
 using UnityEngine;
@@ -9,6 +10,7 @@ namespace NorthStar
     /// <summary>
     /// Updates the retargeted hand positions to match the simulated physical hands
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [RequireComponent(typeof(OVRBody)), RequireComponent(typeof(RetargetingLayer))]
     public class OverrideHandRetargeting : MonoBehaviour
     {

@@ -1,10 +1,13 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
 
 namespace NorthStar
 {
+    [MetaCodeSample("NorthStar")]
     [TrackClipType(typeof(BlendshapeAsset))]
     [TrackBindingType(typeof(BlendshapeManager))]
     public class BlendshapeTrack : TrackAsset

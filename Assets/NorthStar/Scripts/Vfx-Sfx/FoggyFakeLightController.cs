@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -9,6 +11,7 @@ namespace NorthStar
     /// This is fine since there is just this one instance of them clustered together, for more
     /// complicated scenes consider looking at a shader based solution
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class FoggyFakeLightController : MonoBehaviour
     {
         public Material FakeLightMaterial;

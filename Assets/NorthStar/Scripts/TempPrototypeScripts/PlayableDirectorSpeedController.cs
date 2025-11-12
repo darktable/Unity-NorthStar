@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Playables;
 
@@ -7,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Overrides timeline playback speed
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [RequireComponent(typeof(PlayableDirector))]
     public class PlayableDirectorSpeedController : MonoBehaviour
     {

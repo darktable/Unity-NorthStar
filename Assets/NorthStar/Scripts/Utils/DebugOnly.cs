@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -6,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Disable / self-destruct if this isn't a debug build!
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class DebugOnly : MonoBehaviour
     {
         [SerializeField] private bool m_destroyGameObject;

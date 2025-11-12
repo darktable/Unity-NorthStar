@@ -2,11 +2,13 @@
 using System;
 using Meta.Utilities.Environment;
 using Meta.Utilities.Narrative;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace NorthStar
 {
+    [MetaCodeSample("NorthStar")]
     public class DebugCreateOptions : UiMenu
     {
         [SerializeField] private EnvironmentProfile[] m_environmentProfiles;

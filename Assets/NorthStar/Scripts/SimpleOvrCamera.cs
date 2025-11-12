@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 using Node = UnityEngine.XR.XRNode;
 
@@ -7,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Bare-bones vr camera rig for testing
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class SimpleOvrCamera : MonoBehaviour
     {
         public bool UseAsw = true;

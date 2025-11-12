@@ -19,11 +19,13 @@
 * limitations under the License.
 */
 
+using Meta.XR.Samples;
 using UnityEngine;
 
 /// <summary>
 /// Plays a series of clips on repeat with various randomization options
 /// </summary>
+[MetaCodeSample("NorthStar")]
 [RequireComponent(typeof(AudioSource))]
 public class RepeatSound : MonoBehaviour
 {

@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Playables;
 
@@ -7,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Progresses a playable director based on the value from an interactable
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class DivingPulley : MonoBehaviour
     {
         [SerializeField] private PlayableDirector m_pulleyDirector;

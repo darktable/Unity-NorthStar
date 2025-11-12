@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System;
 using Meta.Utilities;
+using Meta.XR.Samples;
 using Oculus.Interaction;
 using UnityEngine;
 using UnityEngine.Events;
@@ -11,6 +12,7 @@ namespace NorthStar
     /// <summary>
     /// Controller for the mysterious silver orb found in Beat 7
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class OrbController : MonoBehaviour
     {
         private static readonly int s_leftHandPositionProperty = Shader.PropertyToID("_LeftHandPosition");

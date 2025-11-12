@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -7,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Simple utility class to update environment lighting on demand
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class UpdateEnvironment : MonoBehaviour
     {
         //Just a basic little script to ask Unity to queue an environment update.

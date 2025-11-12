@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 
 using Meta.Utilities;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -8,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Debug script used to enable/disable player renderers on demand
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class PlayerRenderController : Singleton<PlayerRenderController>
     {
         [SerializeField, AutoSetFromChildren(IncludeInactive = true)] private Renderer[] m_renderers;

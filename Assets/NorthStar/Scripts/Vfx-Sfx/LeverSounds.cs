@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -7,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Plays sounds when a level is pulled
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [RequireComponent(typeof(AudioSource))]
     public class LeverSounds : MonoBehaviour
     {

@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -6,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// A simple effect component with sounds and particles that can be driven via scripts and events
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class EffectObject : MonoBehaviour
     {
         private ParticleSystem[] m_particles;

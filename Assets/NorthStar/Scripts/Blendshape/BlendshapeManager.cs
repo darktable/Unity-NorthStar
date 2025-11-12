@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Linq;
+using Meta.XR.Samples;
 using UnityEditor;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Manages NPC blend shapes for expressions and blinking
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [ExecuteAlways]
     public class BlendshapeManager : MonoBehaviour
     {

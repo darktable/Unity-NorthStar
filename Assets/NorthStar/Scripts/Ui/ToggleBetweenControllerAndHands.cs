@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -6,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Automatically toggles between using hands or controllers as input
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class ToggleBetweenControllerAndHands : MonoBehaviour
     {
         [SerializeField] private GameObject m_hands, m_controllers;

@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using Oculus.Interaction;
 using Oculus.Interaction.HandGrab;
 using Oculus.Interaction.Input;
@@ -9,6 +11,7 @@ namespace NorthStar
     /// <summary>
     /// Script that handles moving the hand objects as physical objects
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [RequireComponent(typeof(Rigidbody))]
     public class PhysicalHand : MonoBehaviour
     {

@@ -159,3 +159,7 @@ The majority of North Star is licensed under the [MIT LICENSE](./LICENSE); howev
 # Contribution
 
 See the [CONTRIBUTING](./CONTRIBUTING.md) file for information on how to contribute.
+
+# Changelog
+
+See [CHANGELOG](./CHANGELOG.md) for a list of changes.

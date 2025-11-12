@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System;
+using Meta.XR.Samples;
 using UnityEngine.Playables;
 
 namespace NorthStar
@@ -7,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// PlayableBehaviour that mixes tracks for look-at behaviour on NPCs, allowing it to be controlled via timelines
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class LookAtMixerBehaviour : PlayableBehaviour
     {
         // NOTE: This function is called at runtime and edit time.  Keep that in mind when setting the values of properties.

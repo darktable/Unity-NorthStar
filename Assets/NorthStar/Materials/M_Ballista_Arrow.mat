@@ -101,8 +101,20 @@ Material:
         m_Texture: {fileID: 2800000, guid: c49e61fa44d5d29458988c763d1cb102, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Parallax_Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SHIPCombinedWetAODirt:
         m_Texture: {fileID: 2800000, guid: 4c7107b64d4ba28428fd68620db25ec9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_879deba925904fd0b61f17e0cec0ee8d_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: f68509435787d8446a7c0f129ca599ed, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_d48f2a885f694c68ba3b4bbcdcb3973a_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: f68509435787d8446a7c0f129ca599ed, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
@@ -140,6 +152,7 @@ Material:
     - _DISABLENORMALTEXTURE: 0
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
+    - _DirtMaskStrength: 1
     - _DirtSpreadMax: 0.926
     - _DirtSpreadMin: 0.189
     - _DirtStrength: 0.585
@@ -152,6 +165,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _Is_Standard_Normal_Texture: 0
     - _Main_Light_Color_Influence: 1
     - _Metallic: 0
     - _MetallicValue: 0
@@ -161,7 +175,9 @@ Material:
     - _OcclusionStrength: 1
     - _OpacityValue: 1
     - _Parallax: 0.02
+    - _Parallax_Amplitude: 1
     - _Parallax_Strength: 0
+    - _Pulse_Opacity: 0
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RENDERINGMODE: 0
@@ -180,19 +196,25 @@ Material:
     - _USEDEFAULTNORMALTEXTURE: 0
     - _USE_CUSTOM_LIGHTING: 0
     - _USE_FRESNEL: 0
+    - _USE_INTERACTION_PULSE: 0
     - _USE_PARALLAX: 0
     - _USE_SHIPCOMBINEDWETAODIRT: 0
     - _USE_SHIPCOMBINEDWETAODIRT_1: 0
+    - _USE_TRIMSHEET_DETAILS: 0
     - _UVSec: 0
     - _UseAmbientOcclusionMap: 0
+    - _UseAmbientOcclustionmap: 0
     - _UseEmissiveMaskMap: 0
     - _UseMetallicMap: 1
     - _UseOpacityMap: 0
     - _UseSmoothnessMap: 1
+    - _Use_Parallax: 0
     - _WaterHeight: -0.16
     - _Wet_Spec_Power_Boost: 0
+    - _WetnessSmoothingFactor: 1
     - _WetnessSpreadMax: 1
     - _WetnessSpreadMin: 0.988
+    - _WetnessSpreadOffset: 0
     - _WetnessStrength: 0
     - _WorkflowMode: 1
     - _ZTest: 4
@@ -204,8 +226,12 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}
     - _FresnelColor: {r: 1, g: 0.5803921, b: 0, a: 1}
+    - _NormalValue: {r: 0, g: 0, b: 1, a: 0}
+    - _Offset: {r: 0, g: 0, b: 0, a: 0}
+    - _Pulse_Tint: {r: 4, g: 1.381703, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Spec_Color: {r: 1, g: 1, b: 1, a: 0}
+    - _Tiling: {r: 1, g: 1, b: 0, a: 0}
     - _Water_Height_Color: {r: 0.12156857, g: 0.18039218, b: 0.67058825, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &1233491116552934678

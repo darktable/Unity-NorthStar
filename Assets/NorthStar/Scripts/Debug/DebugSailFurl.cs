@@ -1,10 +1,12 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities.Environment;
+using Meta.XR.Samples;
 using Oculus.Interaction;
 using UnityEngine;
 
 namespace NorthStar.DebugUtilities
 {
+    [MetaCodeSample("NorthStar")]
     public class DebugSailFurl : ButtonGroup
     {
         [SerializeField]

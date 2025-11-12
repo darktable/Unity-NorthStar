@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
@@ -7,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Used to control some settings related to shadows and shadow importance volumes
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class ShadowController : MonoBehaviour
     {
         public void SetShadowsEnabled(bool enabled)

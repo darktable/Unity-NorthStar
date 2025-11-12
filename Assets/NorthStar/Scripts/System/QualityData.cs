@@ -1,11 +1,13 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using UnityEngine;
 using static NorthStar.QualityControls;
 
 namespace NorthStar
 {
+    [MetaCodeSample("NorthStar")]
     [CreateAssetMenu(menuName = "Data/Quality Data")]
     public class QualityData : ScriptableObject
     {

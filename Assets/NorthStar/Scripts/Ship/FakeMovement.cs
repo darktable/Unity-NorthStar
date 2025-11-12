@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System;
 using System.Collections;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -19,6 +20,7 @@ namespace NorthStar
     /// There are still several side-effects however since other scripts that get called during LateUpdate() or other late
     /// callbacks might get confused and we've had to compensate for that in several cases
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class FakeMovement : MonoBehaviour
     {
         public Vector3 OriginalPosition { get; private set; }

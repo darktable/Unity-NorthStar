@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities.Environment;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -7,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Controller for the wind socks seen on the boat. Sets the angle and cloth forces based on the current wind settings
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class WindSock : MonoBehaviour
     {
         [SerializeField] private float m_windMultiplier = 1;

@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -6,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// An attach point for <see cref="Holsterable"/> objects
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class Holster : MonoBehaviour
     {
         [SerializeField] private ConfigurableJoint m_joint;

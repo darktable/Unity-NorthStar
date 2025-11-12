@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEditor;
 using UnityEngine;
 using static UnityEditor.EditorGUI;
@@ -8,6 +10,7 @@ namespace NorthStar
     /// <summary>
     /// Editor for the text manager
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [CustomEditor(typeof(TextManager))]
     public class TextManagerEditor : Editor
     {

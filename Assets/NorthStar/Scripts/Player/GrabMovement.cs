@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities;
+using Meta.XR.Samples;
 using Oculus.Interaction;
 using Oculus.Interaction.HandGrab;
 using UnityEngine;
@@ -9,6 +10,7 @@ namespace NorthStar
     /// <summary>
     /// Moves the player in a pulling motion when a provided pose is performed
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class GrabMovement : MonoBehaviour
     {
         public enum MoveModes

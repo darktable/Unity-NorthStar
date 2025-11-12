@@ -1,9 +1,11 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
 {
+    [MetaCodeSample("NorthStar")]
     public class BoxReset : MonoBehaviour
     {
         private Vector3 m_originalPos;

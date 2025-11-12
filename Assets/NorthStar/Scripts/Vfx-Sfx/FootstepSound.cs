@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Assertions;
 
@@ -8,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Plays footstep sounds for NPC's
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class FootstepSound : MonoBehaviour
     {
         [SerializeField] private AudioSource m_audioSource = null;

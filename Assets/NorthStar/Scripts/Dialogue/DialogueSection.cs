@@ -1,11 +1,13 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System;
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Playables;
 
 namespace NorthStar
 {
+    [MetaCodeSample("NorthStar")]
     [Serializable]
     public class Dialogue
     {

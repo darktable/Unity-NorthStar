@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Playables;
 
@@ -8,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Renderes all objects in scene to prevent hitches
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class PrewarmScene : MonoBehaviour
     {
         [SerializeField] private GameObject[] m_disabledObjectsToWarmUp;

@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -6,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Prevents objects from moving along an axis
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class LocalPositionLock : MonoBehaviour
     {
         [SerializeField] private bool m_x, m_y, m_z;

@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
@@ -8,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// This class exposes a default value "_Transition" inside material to the inspector so that it can be animated for easier implementation of effects by engineers
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [ExecuteInEditMode]
     public class PassTransitionVariableToMaterial : MonoBehaviour
     {

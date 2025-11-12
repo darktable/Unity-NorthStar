@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -7,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Button that automatically cycles through set of options on press
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class OptionButton : MonoBehaviour
     {
         [SerializeField] private TextObject[] m_textAssets;

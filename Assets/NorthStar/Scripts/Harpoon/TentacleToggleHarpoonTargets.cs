@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -7,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Manages all harpoon targets on a tentacle
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class TentacleToggleHarpoonTargets : MonoBehaviour
     {
         [SerializeField] private HarpoonTarget[] m_harpoonTargets;

@@ -1,9 +1,12 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using TMPro;
 using UnityEngine;
 
 namespace NorthStar.DebugUtilities
 {
+    [MetaCodeSample("NorthStar")]
     [RequireComponent(typeof(TMP_Text))]
     public class FPSDisplay : MonoBehaviour
     {

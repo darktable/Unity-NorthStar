@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -7,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Calls a unity event when something in the provided layer collides with it
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class CollisionTrigger : MonoBehaviour
     {
         public UnityEvent OnCollisionEnterEvents;

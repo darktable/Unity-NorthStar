@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -6,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Moves an object alongside any fake movement object without it being a child
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class ObjectFollowsFakeMovemntInWorldSpace : MonoBehaviour
     {
         [SerializeField] private FakeMovement m_movementSource;

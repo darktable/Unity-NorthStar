@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -7,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Manages the silver curse VFX on the player's hand(s) throughout the game
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class HandCurseManager : Singleton<HandCurseManager>
     {
         private static readonly int s_playerCurse = Shader.PropertyToID("_PlayerCurse");

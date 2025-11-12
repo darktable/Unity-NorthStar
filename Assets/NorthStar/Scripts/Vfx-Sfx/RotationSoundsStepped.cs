@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -6,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// This component playes sounds periodically in response to stepped rotation around an axis (ratcheting behaviour)
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class RotationSoundsStepped : MonoBehaviour
     {
         [SerializeField] private SoundPlayer m_player;

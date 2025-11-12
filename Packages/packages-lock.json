@@ -7,6 +7,13 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.eldnach.shader-variant-analysis": {
+      "version": "https://github.com/eldnach/shader-variant-analysis.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "12980fee5f0acdb611dd7705dccf2e4c4a3c4fda"
+    },
     "com.hecomi.ulipsync": {
       "version": "https://github.com/hecomi/uLipSync.git#upm",
       "depth": 0,
@@ -18,18 +25,18 @@
       "hash": "b98f3b30db516a08ceea11507eda0de291a2acbd"
     },
     "com.meta.movement": {
-      "version": "https://github.com/oculus-samples/Unity-Movement.git",
+      "version": "https://github.com/oculus-samples/Unity-Movement.git#45d88649a95e3373945a4b253cd329407d7e33d3",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "com.meta.xr.sdk.core": "63.0.0",
-        "com.meta.xr.sdk.interaction": "63.0.0",
-        "com.meta.xr.sdk.interaction.ovr": "63.0.0",
+        "com.meta.xr.sdk.core": "74.0.0",
+        "com.meta.xr.sdk.interaction": "74.0.0",
+        "com.meta.xr.sdk.interaction.ovr": "74.0.0",
         "com.unity.textmeshpro": "3.0.6",
         "com.unity.animation.rigging": "1.2.1",
         "com.unity.burst": "1.4.1"
       },
-      "hash": "950cfc3f6b2068b5ec4f886cfcae2595d070a5b5"
+      "hash": "45d88649a95e3373945a4b253cd329407d7e33d3"
     },
     "com.meta.tutorial.framework": {
       "version": "https://github.com/meta-quest/Unity-UtilityPackages.git?path=com.meta.tutorial.framework#com.meta.tutorial.framework-1.0.2",
@@ -85,21 +92,21 @@
       "hash": "8510f943f11e4a1d758be5d33df724ddf1430f2f"
     },
     "com.meta.xr.sdk.audio": {
-      "version": "71.0.0",
+      "version": "77.0.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.meta.xr.sdk.core": {
-      "version": "66.0.0",
+      "version": "77.0.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.meta.xr.sdk.interaction": {
-      "version": "66.0.0",
+      "version": "77.0.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -109,17 +116,17 @@
       "url": "https://packages.unity.com"
     },
     "com.meta.xr.sdk.interaction.ovr": {
-      "version": "66.0.0",
+      "version": "77.0.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.meta.xr.sdk.core": "66.0.0",
-        "com.meta.xr.sdk.interaction": "66.0.0"
+        "com.meta.xr.sdk.core": "77.0.0",
+        "com.meta.xr.sdk.interaction": "77.0.0"
       },
       "url": "https://packages.unity.com"
     },
     "com.meta.xr.simulator": {
-      "version": "65.0.0",
+      "version": "77.0.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
@@ -184,6 +191,13 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.editorcoroutines": {
+      "version": "1.0.0",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.ext.nunit": {
       "version": "1.0.6",
       "depth": 1,
@@ -216,6 +230,15 @@
       "source": "registry",
       "dependencies": {
         "com.unity.test-framework": "1.1.9"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.inputsystem": {
+      "version": "1.7.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.uielements": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
@@ -353,6 +376,33 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.xr.arfoundation": {
+      "version": "5.1.4",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0",
+        "com.unity.modules.ui": "1.0.0",
+        "com.unity.inputsystem": "1.3.0",
+        "com.unity.mathematics": "1.2.5",
+        "com.unity.xr.core-utils": "2.2.1",
+        "com.unity.xr.management": "4.0.1",
+        "com.unity.editorcoroutines": "1.0.0",
+        "com.unity.modules.particlesystem": "1.0.0",
+        "com.unity.modules.unityanalytics": "1.0.0",
+        "com.unity.modules.unitywebrequest": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.xr.core-utils": {
+      "version": "2.3.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.xr": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.xr.legacyinputhelpers": {
       "version": "2.1.10",
       "depth": 1,
@@ -375,12 +425,25 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.unity.xr.oculus": {
-      "version": "4.2.0",
+    "com.unity.xr.meta-openxr": {
+      "version": "1.0.4",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.xr.management": "4.4.0"
+        "com.unity.xr.openxr": "1.7.0",
+        "com.unity.xr.arfoundation": "5.1.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.xr.openxr": {
+      "version": "1.11.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.inputsystem": "1.6.3",
+        "com.unity.xr.core-utils": "2.1.1",
+        "com.unity.xr.management": "4.4.0",
+        "com.unity.xr.legacyinputhelpers": "2.1.2"
       },
       "url": "https://packages.unity.com"
     },
@@ -394,11 +457,11 @@
       "hash": "b737b751d1565a07bd139d8b1f5b8c2280526db3"
     },
     "info.flandre.coacd": {
-      "version": "https://github.com/laurentopia/CoACD.git?path=/Packages/info.flandre.coacd#unity",
+      "version": "https://github.com/jasonmeisel/CoACD.git?path=/Packages/info.flandre.coacd#rename-unity-assembly",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "5daf50be0315def555c826f1945f83f25bf7ce34"
+      "hash": "04037efa3a5554ef3a1b0e7343c92af1c46f3502"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",

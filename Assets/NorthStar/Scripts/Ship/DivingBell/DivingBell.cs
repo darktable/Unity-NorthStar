@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities;
 using Meta.Utilities.Environment;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -8,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Controls diving bell movement and behaviour
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class DivingBell : MonoBehaviour
     {
         [SerializeField] private Transform m_door, m_windowAnchor;

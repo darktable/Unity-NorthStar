@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -8,6 +9,7 @@ namespace NorthStar
     /// Stores pairs of physics materials used to generate effects when collisions occur
     /// Physics materials are used for convenience as all colliders already have them meaning no extra data is required
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [CreateAssetMenu(menuName = "Data/Collision Material Pairs")]
     public class CollisionMaterialPairs : ScriptableObject
     {

@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -7,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// This components modulates the volume of a sound based on rotation speed (optionally) around each axis
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [RequireComponent(typeof(AudioSource))]
     public class RotationSounds : MonoBehaviour
     {

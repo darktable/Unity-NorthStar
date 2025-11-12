@@ -3,6 +3,7 @@ using UnityEngine;
 using System.Xml;
 using System.Collections.Generic;
 using System.IO;
+using Meta.XR.Samples;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -12,6 +13,7 @@ namespace NorthStar
     /// <summary>
     /// Imports and localizes text data
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [CreateAssetMenu(menuName = "Data/Text Manager")]
     public class TextManager : ScriptableObject
     {

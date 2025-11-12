@@ -1,11 +1,13 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections;
+using Meta.XR.Samples;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace NorthStar
 {
+    [MetaCodeSample("NorthStar")]
     public class GameOverMenu : MonoBehaviour
     {
         [SerializeField] private Transform m_canvas;

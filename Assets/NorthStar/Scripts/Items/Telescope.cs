@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities;
 using Meta.Utilities.ViewportRenderer;
+using Meta.XR.Samples;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -10,6 +11,7 @@ namespace NorthStar
     /// <summary>
     /// Interactable object that can be extended and looked through by the player
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class Telescope : Holsterable
     {
         [Header("Eye Anchors"), SerializeField]

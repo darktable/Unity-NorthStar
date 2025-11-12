@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections.Generic;
 using Meta.Utilities;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Pool;
 
@@ -9,6 +10,7 @@ namespace NorthStar
     /// <summary>
     /// Keeps floating text from stacking
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class FloatingTextLayout : Singleton<FloatingTextLayout>
     {
         private readonly List<FloatingText> m_texts = new();

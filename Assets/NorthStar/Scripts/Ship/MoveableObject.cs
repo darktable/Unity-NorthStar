@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -6,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Holds settings for objects that want to move with moving platforms managed by the ParentedTransform script
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class MoveableObject : MonoBehaviour
     {
         public enum UpdateMode

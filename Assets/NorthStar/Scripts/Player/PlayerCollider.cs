@@ -1,10 +1,13 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 namespace NorthStar
 {
     /// <summary>
     /// Moves a colliders to the height and position of the tracked head
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [RequireComponent(typeof(CapsuleCollider))]
     public class PlayerCollider : MonoBehaviour
     {

@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -6,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Plays a vfx and disabes an object after a time
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class CrateDropSequence : MonoBehaviour
     {
         [SerializeField] private float m_despawnDelay;

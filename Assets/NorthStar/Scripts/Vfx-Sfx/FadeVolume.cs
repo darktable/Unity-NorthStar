@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections;
 using DG.Tweening;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -8,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Fades audio sources
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class FadeVolume : MonoBehaviour
     {
         [SerializeField] private AudioSource m_audioSource;

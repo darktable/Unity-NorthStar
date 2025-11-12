@@ -1,11 +1,13 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
 {
     // Progressively enables gameobjects over several frames
     // to avoid frame spikes
+    [MetaCodeSample("NorthStar")]
     public class ThrottledActivator : MonoBehaviour
     {
         // How many frames to wait before enabling the first object

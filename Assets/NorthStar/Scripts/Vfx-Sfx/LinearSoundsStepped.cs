@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -7,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// This component playes sounds periodically in response to stepped linear motion in a given axis
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class LinearSoundsStepped : MonoBehaviour
     {
         private enum Axis

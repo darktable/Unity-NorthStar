@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using DG.Tweening;
 using Meta.Utilities;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -10,6 +11,7 @@ namespace NorthStar
     /// <summary>
     /// Animated toggle button
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class ToggleButton : MonoBehaviour
     {
         [SerializeField, AutoSet] private Button m_button;

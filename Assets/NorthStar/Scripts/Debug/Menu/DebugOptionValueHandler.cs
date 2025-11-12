@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using TMPro;
 using UnityEngine;
 
@@ -7,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Handler for option values, essentially an enum. Uses a dropdown UI
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class DebugOptionValueHandler : MonoBehaviour
     {
         public DebugSystem.OptionsValue ConnectedValue

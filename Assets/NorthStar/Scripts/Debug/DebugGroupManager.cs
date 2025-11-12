@@ -1,9 +1,12 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using Oculus.Interaction;
 using UnityEngine;
 
 namespace NorthStar.DebugUtilities
 {
+    [MetaCodeSample("NorthStar")]
     public class DebugGroupManager : MonoBehaviour
     {
         [SerializeField, Interface(typeof(IInteractableView))]

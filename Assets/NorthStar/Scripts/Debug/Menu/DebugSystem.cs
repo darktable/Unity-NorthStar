@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using Meta.Utilities;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -25,6 +26,7 @@ namespace NorthStar
     /// The system is completely generic and re-useable with automatic bootstrapping by adding itself to the scene via the RuntimeInitializeOnLoadMethod attribute
     /// 
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class DebugSystem : Singleton<DebugSystem>
     {
         private const string ASSETNAME = "DebugSystem";

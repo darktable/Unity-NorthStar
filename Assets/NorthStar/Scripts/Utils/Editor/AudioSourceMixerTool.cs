@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Meta.Utilities.Environment;
+using Meta.XR.Samples;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -11,6 +12,7 @@ namespace NorthStar
     /// <summary>
     /// Tool for finding and selecting audio mixers in the current scene
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class AudioSourceMixerTool : EditorWindow
     {
         private List<Tuple<string, AudioSource>> m_sources;

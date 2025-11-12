@@ -1,11 +1,13 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using UnityEngine;
 namespace NorthStar
 {
     /// <summary>
     /// Script to automate placing colliders on the hand
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class HandColliders : MonoBehaviour
     {
         [SerializeField] private float m_colliderRadius;

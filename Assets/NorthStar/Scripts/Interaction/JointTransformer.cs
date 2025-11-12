@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using Oculus.Interaction;
 using Oculus.Interaction.HandGrab;
 using UnityEngine;
@@ -9,6 +10,7 @@ namespace NorthStar
     /// <summary>
     /// Implementation of the ITransformer interface for physical interaction
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class JointTransformer : MonoBehaviour, ITransformer
     {
         [SerializeField] private Vector3 m_anchor = Vector3.zero;

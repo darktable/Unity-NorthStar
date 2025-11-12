@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -7,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Resets objects to their original position after they fall
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class ResetFallenObjects : MonoBehaviour
     {
         [SerializeField] private Transform m_originalPositionMarker;

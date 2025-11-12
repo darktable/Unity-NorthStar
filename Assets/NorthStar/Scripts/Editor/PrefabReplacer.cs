@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEditor;
 using UnityEngine;
 
@@ -7,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Replaces all selected objects with the specified prefab, and sets the position/rotation/scale of the new object to the replacement
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class ReplaceWithPrefab : ScriptableWizard
     {
         [SerializeField] private GameObject m_prefab = null;

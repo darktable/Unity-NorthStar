@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEditor;
 using UnityEngine;
 
@@ -7,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Editor for text objects, shows the text in the localisation file
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [CustomEditor(typeof(TextObject))]
     public class TextObjectEditor : Editor
     {

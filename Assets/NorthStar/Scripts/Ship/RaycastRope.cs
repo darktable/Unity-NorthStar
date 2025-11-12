@@ -1,15 +1,18 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
 {
+    [MetaCodeSample("NorthStar")]
     public class RopePoint
     {
         public Vector3 Position;
         public Collider Collider;
     }
 
+    [MetaCodeSample("NorthStar")]
     public class RaycastRope : MonoBehaviour
     {
         [SerializeField] private List<RopePoint> m_points = new();

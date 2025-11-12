@@ -2,6 +2,7 @@
 
 using DG.Tweening;
 using Meta.Utilities;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -9,6 +10,7 @@ namespace NorthStar
     /// <summary>
     ///     Triggers the attatched renderer to glow
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class FtueGlow : MonoBehaviour
     {
         [SerializeField][AutoSet] private Renderer m_renderer;

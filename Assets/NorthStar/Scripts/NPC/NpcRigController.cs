@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
 
@@ -7,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// NPC rig controller that manages look-at and eye movement behaviours
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class NpcRigController : MonoBehaviour
     {
         [Header("Constraint Parents")]

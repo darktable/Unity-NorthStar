@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Meta.XR.Samples;
 using Oculus.Interaction;
 using UnityEngine;
 using UnityEngine.Events;
@@ -12,6 +13,7 @@ namespace NorthStar
     /// A base class for objects that will be manipulated by an XR user which will trigger a response in external classes.
     /// </summary>
     /// <typeparam name="T">The expected type of value the inherited interactable class will output when manipulated</typeparam>
+    [MetaCodeSample("NorthStar")]
     public abstract class BaseJointInteractable<T> : MonoBehaviour
     {
         [SerializeField] private UnityEvent<T> m_onValueChange;

@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections;
 using Meta.Utilities.Narrative;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -10,9 +11,31 @@ namespace NorthStar
     /// <summary>
     /// Handles scene managment
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class GameFlowController : MonoBehaviour
     {
-        public static GameFlowController Instance { get; private set; }
+        private static GameFlowController s_instance;
+
+        public static GameFlowController Instance
+        {
+            get
+            {
+                if (s_instance == null)
+                {
+                    // Try to find an existing instance in the scene
+                    s_instance = FindObjectOfType<GameFlowController>();
+                    if (s_instance == null)
+                    {
+                        // If none exists, create a new GameObject and attach the component
+                        var singletonObj = new GameObject("GameFlowController (Singleton)");
+                        s_instance = singletonObj.AddComponent<GameFlowController>();
+                    }
+                }
+
+                return s_instance;
+            }
+            private set => s_instance = value;
+        }
 
         [SerializeField] private TaskID[] m_sceneTasks;
 
@@ -33,13 +56,13 @@ namespace NorthStar
 
         private void Awake()
         {
-            if (Instance)
+            if (s_instance)
             {
                 DestroyImmediate(gameObject);
             }
             else
             {
-                Instance = this;
+                s_instance = this;
             }
         }
 

@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,6 +10,7 @@ namespace NorthStar
     /// <summary>
     /// Handler for int debug values, uses a slider UI
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class DebugIntValueHandler : MonoBehaviour
     {
         public DebugSystem.IntValue ConnectedValue

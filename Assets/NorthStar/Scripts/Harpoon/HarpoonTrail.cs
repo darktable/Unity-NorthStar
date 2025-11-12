@@ -1,10 +1,12 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
 {
+    [MetaCodeSample("NorthStar")]
     public class HarpoonTrail : MonoBehaviour
     {
         public List<Node> Points = new();

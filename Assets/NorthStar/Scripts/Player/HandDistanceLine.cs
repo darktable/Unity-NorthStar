@@ -1,9 +1,11 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
 {
+    [MetaCodeSample("NorthStar")]
     public class HandDistanceLine : MonoBehaviour
     {
         private static readonly int s_alpha = Shader.PropertyToID("_Alpha");

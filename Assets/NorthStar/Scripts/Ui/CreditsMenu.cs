@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using DG.Tweening;
+using Meta.XR.Samples;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -9,6 +10,7 @@ namespace NorthStar
     /// <summary>
     /// Controller for the credits
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class CreditsMenu : UiMenu
     {
         [SerializeField] private TextAsset m_creditsTextSource;

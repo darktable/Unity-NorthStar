@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using UnityEditor;
 using UnityEditor.Events;
 using UnityEngine;
@@ -9,6 +10,7 @@ namespace NorthStar
     /// <summary>
     /// Tool for setting up sounds when people grab objects
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class GrabSoundSetup : EditorWindow
     {
         public PhysicsTransformer Grabbable;

@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -7,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// An interactable in the form of Sliding handle where the user is able to manipulate on one fixed axis which will output the offset in a ratio from 0 to 1 (-linearLimit to linearLimit)
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class SliderInteractable : BaseJointInteractable<float>
     {
         [SerializeField]

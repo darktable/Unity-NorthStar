@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections.Generic;
 using System.Reflection;
+using Meta.XR.Samples;
 using UnityEditor;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ namespace NorthStar
     /// <summary>
     /// Tool for finding objects by their guid
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class ObjectIDTool : EditorWindow
     {
         private string m_id = "";

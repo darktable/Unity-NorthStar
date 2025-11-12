@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// A place for the player to teleport. Handles teleportation hotspot effects and links to other valid teleport locations
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [SelectionBase]
     public class TeleportWaypoint : MonoBehaviour
     {

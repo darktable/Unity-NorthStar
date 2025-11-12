@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -6,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Acts as a proxy for another teleporter waypoint so that the trigger location can be separate to the final destination
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class ProxyTeleportWaypoint : TeleportWaypoint
     {
         [SerializeField] private TeleportWaypoint m_target;

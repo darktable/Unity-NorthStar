@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Meta.Utilities;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -12,6 +13,7 @@ namespace NorthStar
     /// <summary>
     /// Stores shader variant information that is normally write-only in a standard ShaderVariantCollection. Used for warming up PSO's during loading to prevent hitching during gameplay
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [CreateAssetMenu(menuName = "Data/ShaderVariantCollection")]
     public class ShaderVariantCollectionSO : ScriptableObject
     {

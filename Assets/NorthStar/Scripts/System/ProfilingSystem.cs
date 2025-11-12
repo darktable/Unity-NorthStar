@@ -10,6 +10,7 @@ using Meta.Utilities.Environment;
 
 
 #if UNITY_EDITOR
+using Meta.XR.Samples;
 using UnityEditor;
 
 namespace NorthStar
@@ -17,6 +18,7 @@ namespace NorthStar
     /// <summary>
     /// Utility window for sending common commands to the game via the ADB command bridge
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class CommandSenderWindow : EditorWindow
     {
         private Dictionary<string, object> m_values = new();

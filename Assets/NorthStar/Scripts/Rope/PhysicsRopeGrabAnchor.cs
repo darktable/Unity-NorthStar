@@ -2,10 +2,12 @@
 
 using Meta.Utilities;
 using Meta.Utilities.Ropes;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
 {
+    [MetaCodeSample("NorthStar")]
     public class PhysicsRopeGrabAnchor : RopeGrabAnchor
     {
         [SerializeField, AutoSet] private PhysicsTransformer m_transform;

@@ -1,10 +1,12 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 
 using Meta.Utilities.Environment;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
 {
+    [MetaCodeSample("NorthStar")]
     public class NorthStarInitializer : MonoBehaviour
     {
         [RuntimeInitializeOnLoadMethod]

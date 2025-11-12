@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -7,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Simple class that exposes ambient lighting intensity to event-based scripts
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class SkyboxIntensityChange : MonoBehaviour
     {
         private float m_originalIntensity;

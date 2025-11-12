@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -7,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Simple class to expose events for the touch controllers
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class ControllerMappings : MonoBehaviour
     {
         public Action LeftStickForward;

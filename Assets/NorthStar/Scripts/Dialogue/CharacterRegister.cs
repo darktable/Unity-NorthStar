@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -7,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Stores all the characters to make finding them in game easier
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [CreateAssetMenu(menuName = "Data/Character Register")]
     public class CharacterRegister : ScriptableObject
     {

@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -6,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Optionally overrides the steering value for the ship's wheel
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class WheelController : MonoBehaviour
     {
         [SerializeField] private BaseJointInteractable<float> m_interactable;

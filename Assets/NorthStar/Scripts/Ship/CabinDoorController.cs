@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections;
 using Meta.Utilities;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -10,6 +11,7 @@ namespace NorthStar
     /// Handles the cabin door opening/closing. This is important as objects that cannot be seen from one side or the other may need to be disabled
     /// to maintain consistent performance during gameplay
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class CabinDoorController : Singleton<CabinDoorController>
     {
         public UnityEvent DoorOpened;

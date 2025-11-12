@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -8,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Handles telling dialouge to play on the correct character
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class CharacterManager
     {
         public static CharacterManager Instance { get; } = new();

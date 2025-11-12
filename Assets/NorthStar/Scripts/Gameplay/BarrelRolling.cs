@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System;
 using System.Collections;
+using Meta.XR.Samples;
 //using System.Security;
 //using Unity.VisualScripting;
 using UnityEngine;
@@ -11,6 +12,7 @@ namespace NorthStar
     /// <summary>
     /// handles the barrel rolling interactions
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class BarrelRolling : MonoBehaviour
     {
         public Vector3 StartPosition { get => m_startPosition; set => m_startPosition = value; }

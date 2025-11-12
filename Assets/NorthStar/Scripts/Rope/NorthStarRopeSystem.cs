@@ -1,9 +1,11 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 
 using Meta.Utilities.Ropes;
+using Meta.XR.Samples;
 
 namespace NorthStar
 {
+    [MetaCodeSample("NorthStar")]
     public class NorthStarRopeSystem : RopeSystem
     {
         protected BodyPositions m_bodyPositions;

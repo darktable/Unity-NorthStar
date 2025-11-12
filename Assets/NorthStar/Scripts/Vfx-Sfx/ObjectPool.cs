@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -9,6 +10,7 @@ namespace NorthStar
     /// Instantiating a new object at runtime is both expensive and can cause GC hitches
     /// Use pools to avoid this, especially for frequently spawned things like VFX and sounds
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class ObjectPool : MonoBehaviour
     {
         [SerializeField, Tooltip("The initial size of the pool")] private int m_poolSize = 10;

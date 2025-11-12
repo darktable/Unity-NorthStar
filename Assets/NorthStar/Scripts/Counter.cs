@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -7,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Triggers a unity event when count reaches a defined value
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class Counter : MonoBehaviour
     {
         public int Count { get; private set; }

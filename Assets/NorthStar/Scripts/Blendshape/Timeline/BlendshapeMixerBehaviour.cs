@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine.Playables;
 
 namespace NorthStar
@@ -6,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Playable behaviour that exposes control of NPC blendshapes via the timeline
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class BlendshapeMixerBehaviour : PlayableBehaviour
     {
         // NOTE: This function is called at runtime and edit time.  Keep that in mind when setting the values of properties.

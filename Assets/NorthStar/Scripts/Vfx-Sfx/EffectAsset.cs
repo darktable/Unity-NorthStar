@@ -4,6 +4,7 @@
 using System.Collections.Generic;
 using UnityEditor;
 #endif
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -11,6 +12,7 @@ namespace NorthStar
     /// <summary>
     /// Data object representing an effect with convenience methods for creation and playing
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [CreateAssetMenu(menuName = "Data/Effect Asset")]
     public class EffectAsset : ScriptableObject
     {

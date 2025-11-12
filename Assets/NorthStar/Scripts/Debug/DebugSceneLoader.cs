@@ -1,9 +1,12 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using Oculus.Interaction;
 using UnityEngine.SceneManagement;
 
 namespace NorthStar.DebugUtilities
 {
+    [MetaCodeSample("NorthStar")]
     public class DebugSceneLoader : ButtonGroup
     {
         protected override void DecrementOnStateChange(InteractableStateChangeArgs args)

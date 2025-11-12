@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Trigger an event on a delay
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class DelayedEvent : MonoBehaviour
     {
         [SerializeField] private bool m_playOnStart;

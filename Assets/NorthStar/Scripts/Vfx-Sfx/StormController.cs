@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections;
 using Meta.Utilities.Environment;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -8,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Controller for the storm effects system, manages spawning lightning VFX, sounds and adjusting global lighting and reflection dynamically
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class StormController : MonoBehaviour
     {
         [SerializeField] private bool m_strikePositionsRelativeToBoat = true;

@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System;
 using System.Collections;
+using Meta.XR.Samples;
 using Oculus.Interaction.Input;
 using Oculus.Movement.AnimationRigging;
 using UnityEngine;
@@ -13,6 +14,7 @@ namespace NorthStar
     /// 
     /// A custom leg IK solution is used here to support seated and standing play with an offset rig
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [DefaultExecutionOrder(9999)] // Must be higher than FakeMovement to keep player upright
     public class BodyPositions : MonoBehaviour
     {

@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using DG.Tweening;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -8,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Used to gradually fade the screen in and out when required by game logic and events
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class ScreenFader : MonoBehaviour
     {
         [SerializeField] private Volume m_ppVolume;

@@ -1,10 +1,12 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 
 using Meta.Utilities;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
 {
+    [MetaCodeSample("NorthStar")]
     public class Island : MonoBehaviour
     {
         [SerializeField] private float m_minDistance = 100, m_maxDistance = 1000f;

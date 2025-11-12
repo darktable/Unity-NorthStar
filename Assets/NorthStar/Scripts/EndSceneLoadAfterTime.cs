@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using DG.Tweening;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -7,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Tells the gameflow to load the scene after a screenfade and a timer
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class EndSceneLoadAfterTime : MonoBehaviour
     {
         [SerializeField] private float m_fadeTime = .2f;

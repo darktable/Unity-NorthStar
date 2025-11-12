@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using DG.Tweening;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -8,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Button hover/click sounds and tween effects
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class ButtonVisual : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         [SerializeField] private float m_hoverScale = 1f;

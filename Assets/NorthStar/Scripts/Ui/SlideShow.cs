@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using DG.Tweening;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Cycles between several images in the UI, used for first time user experience (FTUE) tutorials
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class SlideShow : MonoBehaviour
     {
         [SerializeField] private Image[] m_imgs;

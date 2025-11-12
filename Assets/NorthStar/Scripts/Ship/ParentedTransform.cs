@@ -1,10 +1,13 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 namespace NorthStar
 {
     /// <summary>
     /// Handles Registering objects to be moved with a platform
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class ParentedTransform : MonoBehaviour
     {
         //private Matrix4x4 m_lastTransform;

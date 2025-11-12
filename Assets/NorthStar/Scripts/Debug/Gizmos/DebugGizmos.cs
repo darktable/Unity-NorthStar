@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -6,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Draws a debug sphere
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class DebugGizmos : MonoBehaviour
     {
         [SerializeField] private Color m_gizmoColor = Color.red;

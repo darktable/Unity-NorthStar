@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System;
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using Oculus.Interaction;
 using Oculus.Interaction.Input;
 using Oculus.Movement.AnimationRigging;
@@ -11,6 +12,7 @@ namespace NorthStar
     /// <summary>
     /// Performs some post-processing on elbow, wrist and finger joints to more closely match the player's hand tracking while also correcting twist bones and elbow orientation
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [CreateAssetMenu(fileName = "Synthetic Hand", menuName = "Data/Retargeting Processors/Synthetic Hand",
         order = 1)]
     public class SyntheticHandRetargetingProcessor : RetargetingProcessor

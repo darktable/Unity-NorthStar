@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections.Generic;
 using Meta.Utilities.Environment;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -8,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Data for a single lightning flash used by the storm controller
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [CreateAssetMenu(fileName = "LightningFlash", menuName = "ScriptableObjects/LightningFlashScriptableObject", order = 1)]
     public class LightningFlashScriptableObject : ScriptableObject
     {

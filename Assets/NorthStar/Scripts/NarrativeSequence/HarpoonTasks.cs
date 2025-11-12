@@ -2,6 +2,7 @@
 using System;
 using Meta.Utilities.Narrative;
 using Meta.Utilities.Ropes;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -9,6 +10,7 @@ namespace NorthStar
     /// <summary>
     /// A task condition that checks if targets have been struck by the harpoon
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class HitTargets : TaskCondition
     {
         [SerializeField] private HarpoonTarget[] m_targets = new HarpoonTarget[0];
@@ -39,6 +41,7 @@ namespace NorthStar
     /// <summary>
     /// A task condition that checks if targets have been reeled in by the harpoon
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class ReeledTargets : TaskCondition
     {
         [SerializeField] private HarpoonTarget[] m_targets = new HarpoonTarget[0];
@@ -69,6 +72,7 @@ namespace NorthStar
     /// <summary>
     /// A task condition that checks if a target object is being aimed at by the harpoon
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class ObjectAimedAt : TaskCondition
     {
         [SerializeField] private Transform m_object;
@@ -106,6 +110,7 @@ namespace NorthStar
     /// <summary>
     /// A task condition that waits until a particular event broadcaster is triggered
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [Serializable]
     public class WaitForEventBroadcastCondition : TaskCondition
     {
@@ -168,6 +173,7 @@ namespace NorthStar
     /// <summary>
     /// A task condition that checks if a rope has been spooled
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class RopeIsSpooledTask : TaskCondition
     {
         [SerializeField] private RopeSystem m_ropeSystem;
@@ -184,6 +190,7 @@ namespace NorthStar
     /// <summary>
     /// A task condition that checks if a rope has been tied
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class RopeIsTiedTask : TaskCondition
     {
         [SerializeField] private RopeSystem m_ropeSystem;
@@ -191,6 +198,7 @@ namespace NorthStar
         public override bool IsComplete(TaskHandler handler) => m_ropeSystem.Tied;
     }
 
+    [MetaCodeSample("NorthStar")]
     public class InteractionTriggeredCondition : TaskCondition
     {
         [SerializeField] private InteractionTriggered m_interactionTriggered;

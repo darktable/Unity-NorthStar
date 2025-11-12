@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -6,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Freezes an object at a specific position, used for barrel rolling activity
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [RequireComponent(typeof(Rigidbody))]
     public class LocalPositionConstraints : MonoBehaviour
     {

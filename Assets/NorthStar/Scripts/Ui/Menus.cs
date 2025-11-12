@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -6,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Manages current active menu and menu placement relative to the player
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class Menus : MonoBehaviour
     {
         public enum MenuOptions

@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections.Generic;
 using Meta.Utilities.Environment;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -8,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// The projectile launched from the harpoon
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class HarpoonBolt : MonoBehaviour
     {
         [SerializeField] private Rigidbody m_rigidbody;

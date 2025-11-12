@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using TMPro;
 using UnityEngine;
 
@@ -7,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Debug menu UI, creates the visual interface for the debug system
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class DebugMenu : MonoBehaviour
     {
         [SerializeField] private Transform m_contentRoot;

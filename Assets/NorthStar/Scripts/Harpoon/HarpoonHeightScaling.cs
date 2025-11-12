@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -7,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Raises or lowers the harpoon based on the player height
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class HarpoonHeightScaling : MonoBehaviour
     {
         private Vector3 m_originalPosition;

@@ -1,9 +1,11 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
 {
+    [MetaCodeSample("NorthStar")]
     public class TeleportHotspotCollection : MonoBehaviour
     {
         [SerializeField] private Transform m_playerHead;

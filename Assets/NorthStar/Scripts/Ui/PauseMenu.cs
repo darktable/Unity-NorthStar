@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -6,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Controller for the pause menu
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class PauseMenu : UiMenu
     {
         public void ExitGame()

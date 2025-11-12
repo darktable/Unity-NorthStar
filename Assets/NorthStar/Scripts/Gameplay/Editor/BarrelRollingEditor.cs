@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEditor;
 using UnityEngine;
 
@@ -7,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Editor for the barrel rolling interaction
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [CustomEditor(typeof(BarrelRolling)), CanEditMultipleObjects]
     public class BarrelRollingEditor : Editor
     {

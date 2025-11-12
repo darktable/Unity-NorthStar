@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities.Environment;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -7,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Plays vfx when an object hits the water
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class Splash : MonoBehaviour
     {
         [SerializeField] private EffectAsset m_effectAsset;

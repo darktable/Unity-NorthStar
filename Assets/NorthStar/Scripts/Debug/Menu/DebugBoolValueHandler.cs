@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,6 +10,7 @@ namespace NorthStar
     /// <summary>
     /// Handler for boolean debug values, uses a checkbox UI
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class DebugBoolValueHandler : MonoBehaviour
     {
         public DebugSystem.BoolValue ConnectedValue

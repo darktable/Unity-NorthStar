@@ -1,9 +1,11 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
 {
+    [MetaCodeSample("NorthStar")]
     public class OrbAttraction : MonoBehaviour
     {
         //This could be simplified to having fewer variables to manage by using exact values in the animation curves, rather than using them as a multiplier

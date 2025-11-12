@@ -1,11 +1,13 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.IO;
+using Meta.XR.Samples;
 using uLipSync;
 using UnityEditor;
 using UnityEngine;
 
 namespace NorthStar
 {
+    [MetaCodeSample("NorthStar")]
     public class MenuItems : MonoBehaviour
     {
         [MenuItem("Assets/Create/Data/Baked Lipsync")]

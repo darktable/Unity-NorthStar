@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,6 +10,7 @@ namespace NorthStar
     /// <summary>
     /// Handler for debug actions, which are just buttons that activate some custom code
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class DebugActionHandler : MonoBehaviour
     {
         public DebugSystem.DebugAction ConnectedValue

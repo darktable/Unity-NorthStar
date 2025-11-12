@@ -1,8 +1,11 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
 {
+    [MetaCodeSample("NorthStar")]
     [RequireComponent(typeof(Light))]
     public class RandomLightColor : MonoBehaviour
     {

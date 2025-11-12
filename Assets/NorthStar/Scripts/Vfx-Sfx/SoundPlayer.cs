@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections.Generic;
 using Meta.Utilities;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -9,6 +10,7 @@ namespace NorthStar
     /// <summary>
     /// Simple yet versatile component for playing sounds with randomized variations from scripts or events
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class SoundPlayer : MonoBehaviour
     {
         [SerializeField, AutoSet] private AudioSource m_source;

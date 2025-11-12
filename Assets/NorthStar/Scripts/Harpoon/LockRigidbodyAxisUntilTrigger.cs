@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -7,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Prevents horizontal movement of a rigidbody until its released
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class LockRigidbodyAxisUntilTrigger : MonoBehaviour
     {
         [SerializeField, AutoSet] private Rigidbody m_body;

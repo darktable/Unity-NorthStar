@@ -1,7 +1,9 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 
+using Meta.XR.Samples;
 using UnityEngine;
 
+[MetaCodeSample("NorthStar")]
 public class FlockingSystem_Manual : MonoBehaviour
 {
     [Header("Basic Settings")]

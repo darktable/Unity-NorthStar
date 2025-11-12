@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine.Playables;
 
 namespace NorthStar
@@ -6,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Allows the ship's steering wheel to be controlled via the timeline
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class WheelMixerBehaviour : PlayableBehaviour
     {
         public override void ProcessFrame(Playable playable, FrameData info, object playerData)

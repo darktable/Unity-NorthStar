@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEditor;
 using UnityEngine;
 using static UnityEditor.EditorGUI;
@@ -8,6 +10,7 @@ namespace NorthStar
     /// <summary>
     /// Gives a list of character names for a string field
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [CustomPropertyDrawer(typeof(CharacterDropdown))]
     public class CharacterDropdownDrawer : PropertyDrawer
     {

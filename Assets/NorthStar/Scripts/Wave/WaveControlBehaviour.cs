@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities.Environment;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Playables;
 
@@ -8,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// This playable behaviour controls explict ocean wave VFX, allowing them to be precisely edited and controlled via timelines
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [System.Serializable]
     public class WaveControlBehaviour : PlayableBehaviour
     {

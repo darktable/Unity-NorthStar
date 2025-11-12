@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEditor;
 
 namespace NorthStar
@@ -6,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Editor for dialouge players, shows its text data at a glance
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [CanEditMultipleObjects]
     [CustomEditor(typeof(DialoguePlayer))]
     public class DialoguePlayerEditor : Editor

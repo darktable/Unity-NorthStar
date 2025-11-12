@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using DG.Tweening;
 using Meta.Utilities;
+using Meta.XR.Samples;
 using TMPro;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ namespace NorthStar
     /// <summary>
     /// Displays text above registered characters
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class Subtitle : MonoBehaviour
     {
         [CharacterDropdown] public string Id;

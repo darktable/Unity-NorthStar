@@ -1,13 +1,15 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
 
 namespace NorthStar
 {
+    [MetaCodeSample("NorthStar")]
     [TrackClipType(typeof(BoatMovementAsset))]
     [TrackBindingType(typeof(BoatController))]
-
     public class BoatMovementTrack : TrackAsset
     {
         public int Slot;

@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -7,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Prevents colliders on one object colliding with other select colliders
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class CollidersDontCollideWith : MonoBehaviour
     {
         [SerializeField] private List<Collider> m_others;

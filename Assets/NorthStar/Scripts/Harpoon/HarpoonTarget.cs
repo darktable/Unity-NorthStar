@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Object to be put on things the harpoon should hit
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class HarpoonTarget : MonoBehaviour
     {
         public bool Reelable = true;

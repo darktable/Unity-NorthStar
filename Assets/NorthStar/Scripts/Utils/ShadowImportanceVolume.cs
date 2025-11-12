@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System;
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Jobs;
@@ -18,6 +19,7 @@ namespace NorthStar
     /// 
     /// Please note that this works in tandem with custom modifications to URP
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [ExecuteAlways]
     public class ShadowImportanceVolume : MonoBehaviour
     {

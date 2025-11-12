@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities;
 using Meta.Utilities.Environment;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -8,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Manages the sail logic and visual effects based on the current wind direction and sail angle
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class SailAngleController : MonoBehaviour
     {
         private static readonly int s_sailDirection = Shader.PropertyToID("_SailDirection");

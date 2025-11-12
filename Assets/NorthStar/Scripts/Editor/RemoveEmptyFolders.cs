@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.IO;
+using Meta.XR.Samples;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Assertions;
@@ -9,6 +10,7 @@ namespace NorthStar
     /// <summary>
     /// Clean the project of emprt folders
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class RemoveEmptyFolders
     {
         [MenuItem("Tools/NorthStar/Clean Empty Folders")]

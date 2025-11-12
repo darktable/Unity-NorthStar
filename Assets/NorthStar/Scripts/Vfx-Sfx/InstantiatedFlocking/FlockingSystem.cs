@@ -1,10 +1,12 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 
+using Meta.XR.Samples;
 using UnityEngine;
 
 /// <summary>
 /// Prefab data for an agent within the flock
 /// </summary>
+[MetaCodeSample("NorthStar")]
 [System.Serializable]
 public class ObjectPrefab
 {

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using Meta.Utilities;
 using Meta.Utilities.Ropes;
+using Meta.XR.Samples;
 using Oculus.Interaction.HandGrab;
 using UnityEngine;
 using UnityEngine.Events;
@@ -13,6 +14,7 @@ namespace NorthStar
     /// <summary>
     /// Controller for the harpoon interaction
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class Harpoon : MonoBehaviour
     {
         [Space(5), SerializeField]

@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -13,6 +14,7 @@ namespace NorthStar
     /// We used this way of gathering shader variants due to differences between editor and device shaders on Android causing
     /// issues with hitches. We later used this tool to help with PSO warmup to prevent hitching during gameplay
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class ShaderLoadTool : EditorWindow
     {
         private TextAsset m_txtAsset;

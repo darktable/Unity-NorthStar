@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using DG.Tweening;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -7,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Generic menu controller with support for fading in and out
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class UiMenu : MonoBehaviour
     {
         private bool m_open = true;

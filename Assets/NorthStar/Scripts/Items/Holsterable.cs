@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using Oculus.Interaction.HandGrab;
 using UnityEngine;
 using UnityEngine.Events;
@@ -8,6 +10,7 @@ namespace NorthStar
     /// <summary>
     /// For the physically enabled item component that can be attached to a corrisponding <see cref="Holster"/> object
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class Holsterable : MonoBehaviour
     {
         [SerializeField, HideInInspector] private PhysicsTransformer[] m_grabPoints;

@@ -1,10 +1,13 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using Oculus.Interaction;
 using Unity.Mathematics;
 using UnityEngine;
 
 namespace NorthStar.DebugUtilities
 {
+    [MetaCodeSample("NorthStar")]
     public class ResetButton : MonoBehaviour
     {
         [SerializeField, Interface(typeof(IInteractableView))]

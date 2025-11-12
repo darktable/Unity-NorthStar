@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System.Collections.Generic;
 using Meta.Utilities;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -8,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Efficiently manages spawning VFX using object pools
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class VfxManager : Singleton<VfxManager>
     {
         private Dictionary<EffectAsset, ObjectPool> m_pools = new();

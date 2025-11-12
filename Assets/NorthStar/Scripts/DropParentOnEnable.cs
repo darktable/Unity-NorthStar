@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -6,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Removes an objects parent when its enabled after the boat syncs its movement
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class DropParentOnEnable : MonoBehaviour
     {
         private void Drop()

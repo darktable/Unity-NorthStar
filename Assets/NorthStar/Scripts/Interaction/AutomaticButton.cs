@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -7,6 +9,7 @@ namespace NorthStar
     /// <summary>
     /// Physical button interaction
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class AutomaticButton : MonoBehaviour
     {
         public UnityEvent OnPress;

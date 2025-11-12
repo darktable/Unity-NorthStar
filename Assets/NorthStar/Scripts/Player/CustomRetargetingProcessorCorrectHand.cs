@@ -1,6 +1,7 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using System;
 using System.Collections.Generic;
+using Meta.XR.Samples;
 using Oculus.Interaction;
 using Oculus.Interaction.Input;
 using Oculus.Movement.AnimationRigging;
@@ -15,6 +16,7 @@ namespace NorthStar
     /// Retargeting processor used to fix the arm via an IK algorithm so that the retargeted hand position matches
     /// the tracked hand position.
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     [CreateAssetMenu(fileName = "Correct Hand", menuName = "Data/Retargeting Processors/Correct Hand",
         order = 1)]
     public sealed class CustomRetargetingProcessorCorrectHand : RetargetingProcessor

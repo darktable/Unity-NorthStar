@@ -1,4 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -6,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// basic script that just makes a Gameobject adopt the same position and rotation of another transform
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class FollowObject : MonoBehaviour
     {
         public Transform FollowTarget;

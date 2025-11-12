@@ -1,5 +1,6 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
 using Meta.Utilities;
+using Meta.XR.Samples;
 using UnityEngine;
 
 namespace NorthStar
@@ -7,6 +8,7 @@ namespace NorthStar
     /// <summary>
     /// Joint that applies the exact amount of force to a rigidbody to reach its target without overshooting
     /// </summary>
+    [MetaCodeSample("NorthStar")]
     public class CriticallyDampendSpringJoint : MonoBehaviour
     {
         [SerializeField, AutoSet] private Rigidbody m_body;

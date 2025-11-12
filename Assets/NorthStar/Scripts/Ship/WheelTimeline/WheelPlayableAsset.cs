@@ -1,9 +1,12 @@
 // Copyright (c) Meta Platforms, Inc. and affiliates.
+
+using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Playables;
 
 namespace NorthStar
 {
+    [MetaCodeSample("NorthStar")]
     public class WheelPlayableAsset : PlayableAsset
     {
         public WheelPlayableBehaviour Template;
